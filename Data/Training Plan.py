@@ -11,47 +11,53 @@ import nltk
 nltk.download('punkt')
 nltk.download('punkt_tab')
 from nltk.tokenize import sent_tokenize
+import re
 
 doc = Document("Training Plan.docx")
 
 
-full_text = []
-for para in doc.paragraphs:
-    if para.text.strip():  
-        full_text.append(para.text.strip())
-
-
-#print(full_text[:10])  
-
-import re #(used for detecting patterns like "1.0", "2.0" etc.)
+full_text = [p.text.strip() for p in doc.paragraphs if p.text.strip()]
 
 sections = {}
 current_section = None
-
+record = False  
 for line in full_text:
-    if re.match(r"^\d+\.\d*", line):  # detects lines like 1.0, 2.0, etc.
+    # start only after the real "1.0 Introduction" appears
+    if re.match(r"^1\.0\s+Introduction$", line):
+        record = True
+
+    if not record:
+        continue  # skip preface, version history, table of contents
+
+    # detect section headings
+    if re.match(r"^\d+(\.\d+)*\s+", line):
         current_section = line
         sections[current_section] = []
     elif current_section:
         sections[current_section].append(line)
 
+#print(full_text[:10])  
+
 cleaned_data = []
 
 for section, content in sections.items():
     text = " ".join(content)
-    text = re.sub(r"<.*?>|\[.*?\]", "", text)  # remove placeholders
+    text = re.sub(r"<.*?>", "", text)  # remove placeholders
     text = re.sub(r"\s+", " ", text)  # normalize spaces
 
-    # Take first 2–3 sentences as summary
+#Summary
     sentences = sent_tokenize(text)
-    summary = " ".join(sentences[:2])
+    summary = " ".join(sentences[:])
 
     cleaned_data.append({
         "phase": "Development",
         "deliverable": "Training Plan",
         "section_title": section,
-        "summary": summary,
         "related_eplc_reference": "EPLC Framework – Development Phase",
-        "source": "CDC UP Training Plan Template"
+        "source": "CDC UP Training Plan Template",
+        "summary": summary
+        
     })
 
+df = pd.DataFrame(cleaned_data)
+df.to_csv("training_plan_cleaned.csv", index=False)
