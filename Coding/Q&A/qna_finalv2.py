@@ -1,6 +1,5 @@
 # Import packages
-import os, sys
-from typing import List, Tuple
+import os
 from dotenv import load_dotenv
 from chromadb import PersistentClient
 from sentence_transformers import SentenceTransformer
@@ -19,20 +18,52 @@ load_dotenv()
 
 # Basic config
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-DB_ROOT = os.getenv("CHROMA_ROOT", os.path.join(BASE_DIR, "vector_db"))
+REPOSITORY_ROOT = os.path.abspath(os.path.join(BASE_DIR, "..", ".."))
 
-TOP_K      = int(os.getenv("TOP_K", "6"))
+db_root_config = os.getenv(
+    "CHROMA_ROOT",
+    os.path.join("Data", "Vector DataBase"),
+)
+DB_ROOT = (
+    db_root_config
+    if os.path.isabs(db_root_config)
+    else os.path.join(REPOSITORY_ROOT, db_root_config)
+)
+
+TOP_K = int(os.getenv("TOP_K", "6"))
+SEM_THRESHOLD = float(os.getenv("SEM_THRESHOLD", "0.75"))
 CHAT_MODEL = os.getenv("CHAT_MODEL", "gpt-4o-mini")
+EMBEDDING_MODEL = os.getenv(
+    "EMBEDDING_MODEL",
+    "BAAI/bge-large-en-v1.5",
+)
+QUERY_INSTRUCTION = os.getenv(
+    "QUERY_INSTRUCTION",
+    "Represent this sentence for searching relevant passages: ",
+)
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 if not OPENAI_API_KEY:
     raise RuntimeError("OPENAI_API_KEY missing in .env")
 
-DB_EPLC_PATH = os.path.join(DB_ROOT, "EPLCFramework_db")
-DB_HHS_PATH  = os.path.join(DB_ROOT, "HHS_db")
+DB_EPLC_PATH = os.path.join(DB_ROOT, "chroma_db_EPLC final Phase")
+DB_HHS_PATH = os.path.join(DB_ROOT, "chroma_eplc_policy")
+
+
+def require_existing_database(path: str, label: str) -> None:
+    database_file = os.path.join(path, "chroma.sqlite3")
+    if not os.path.isfile(database_file):
+        raise FileNotFoundError(
+            f"{label} database not found at {path}. "
+            "Set CHROMA_ROOT to the directory containing the Q&A databases."
+        )
+
+
+require_existing_database(DB_EPLC_PATH, "EPLC")
+require_existing_database(DB_HHS_PATH, "HHS")
 
 # Initialize embedding model
-sbert = SentenceTransformer("BAAI/bge-large-en-v1.5", device="cpu")
+sbert = SentenceTransformer(EMBEDDING_MODEL, device="cpu")
 
 # Connect to DBs
 eplc_db = PersistentClient(path=DB_EPLC_PATH)
@@ -68,7 +99,11 @@ def retrieve_exact(substring: str, k: int = TOP_K):
     return ids[:k], docs[:k], [0.0]*min(len(docs),k)
 
 def retrieve(query: str, k: int = TOP_K):
-    qv = sbert.encode([f"query: {query}"], normalize_embeddings=True).tolist()
+    instructed_query = f"{QUERY_INSTRUCTION}{query}"
+    qv = sbert.encode(
+        [instructed_query],
+        normalize_embeddings=True,
+    ).tolist()
 
     # EPLC
     r1 = coll_eplc.query(query_embeddings=qv, n_results=k,
@@ -127,13 +162,11 @@ def ask_openai(prompt, allow_fallback=False):
     except Exception as e:
         return f"[openai error] {e}"
 
-
-
-
-SEM_THRESHOLD = 0.75
-
 def main():
-    print(f"[ready] GPT={CHAT_MODEL} | top_k={TOP_K}")
+    print(
+        f"[ready] GPT={CHAT_MODEL} | embedding={EMBEDDING_MODEL} "
+        f"| top_k={TOP_K}"
+    )
     print("Ask EPLC/HHS questions. Type exit to quit.")
 
     while True:
