@@ -77,57 +77,112 @@ def get_single_collection(db, label):
         raise RuntimeError(f"[error] Multiple collections in {label}")
     return cols[0]
 
-coll_eplc = get_single_collection(eplc_db, "EPLCFramework_db")
-coll_hhs  = get_single_collection(hhs_db, "HHS_db")
+coll_eplc = get_single_collection(eplc_db, "EPLC")
+coll_hhs = get_single_collection(hhs_db, "HHS")
 
 
 # ---------------- Retrieval ----------------------
 
-def retrieve_exact(substring: str, k: int = TOP_K):
-    ids, docs = [], []
-    for coll in (coll_eplc, coll_hhs):
-        try:
-            r = coll.get(
-                where_document={"$contains": substring},
-                include=["documents"],
-                limit=k,
-            )
-        except:
+def query_collection(collection, database_label, query_embedding, k):
+    response = collection.query(
+        query_embeddings=query_embedding,
+        n_results=k,
+        include=["documents", "distances", "metadatas"],
+    )
+
+    ids = response.get("ids", [[]])[0]
+    documents = response.get("documents", [[]])[0]
+    distances = response.get("distances", [[]])[0]
+    metadatas = response.get("metadatas", [[]])[0]
+
+    results = []
+    for document_id, document, distance, metadata in zip(
+        ids,
+        documents,
+        distances,
+        metadatas,
+    ):
+        if not document:
             continue
-        ids.extend(r.get("ids", []))
-        docs.extend(r.get("documents", []))
-    return ids[:k], docs[:k], [0.0]*min(len(docs),k)
+        results.append(
+            {
+                "id": document_id,
+                "document": document,
+                "distance": float(distance),
+                "metadata": metadata or {},
+                "database": database_label,
+            }
+        )
+    return results
+
+
+def deduplicate_results(results):
+    best_result_by_document = {}
+    for result in results:
+        document_key = " ".join(result["document"].split()).lower()
+        existing_result = best_result_by_document.get(document_key)
+        if (
+            existing_result is None
+            or result["distance"] < existing_result["distance"]
+        ):
+            best_result_by_document[document_key] = result
+    return list(best_result_by_document.values())
+
 
 def retrieve(query: str, k: int = TOP_K):
+    query = query.strip()
+    if not query:
+        return []
+
     instructed_query = f"{QUERY_INSTRUCTION}{query}"
-    qv = sbert.encode(
+    query_embedding = sbert.encode(
         [instructed_query],
         normalize_embeddings=True,
     ).tolist()
 
-    # EPLC
-    r1 = coll_eplc.query(query_embeddings=qv, n_results=k,
-                         include=["documents", "distances"])
-    ids1  = r1.get("ids", [[]])[0]
-    docs1 = r1.get("documents", [[]])[0]
-    dist1 = r1.get("distances", [[]])[0]
+    results = query_collection(
+        coll_eplc,
+        "EPLC",
+        query_embedding,
+        k,
+    )
+    results.extend(
+        query_collection(
+            coll_hhs,
+            "HHS",
+            query_embedding,
+            k,
+        )
+    )
 
-    # HHS
-    r2 = coll_hhs.query(query_embeddings=qv, n_results=k,
-                         include=["documents", "distances"])
-    ids2  = r2.get("ids", [[]])[0]
-    docs2 = r2.get("documents", [[]])[0]
-    dist2 = r2.get("distances", [[]])[0]
+    results = deduplicate_results(results)
+    results.sort(key=lambda result: result["distance"])
+    return results[:k]
 
-    combined = []
-    for a,b,c in zip(ids1,docs1,dist1): combined.append((a,b,c))
-    for a,b,c in zip(ids2,docs2,dist2): combined.append((a,b,c))
 
-    combined.sort(key=lambda x: x[2])
-    combined = combined[:k]
+def filter_relevant_results(results, threshold=SEM_THRESHOLD):
+    return [
+        result
+        for result in results
+        if result["distance"] < threshold
+    ]
 
-    return [x[0] for x in combined], [x[1] for x in combined], [x[2] for x in combined]
 
+def format_citation(result):
+    metadata = result["metadata"]
+    citation_parts = [
+        metadata.get("source") or metadata.get("document"),
+        metadata.get("section_number"),
+        metadata.get("title"),
+    ]
+    citation_parts = [
+        str(part).strip()
+        for part in citation_parts
+        if part is not None and str(part).strip()
+    ]
+    if citation_parts:
+        return " | ".join(dict.fromkeys(citation_parts))
+    return f'{result["database"]} | {result["id"]}'
 
 # ---------------- Prompting ----------------------
 
@@ -175,33 +230,25 @@ def main():
             break
         print("Processing...")
 
-        # 1. exact retrieval
-        ids_exact, docs_exact, _ = retrieve_exact(q, TOP_K)
+        retrieved_results = retrieve(q, TOP_K)
+        relevant_results = filter_relevant_results(retrieved_results)
 
-        # 2. semantic retrieval
-        ids_sem, docs_sem, dists_sem = retrieve(q, TOP_K)
-
-        # ---- Semantic relevance filter ----
-        sem_valid = [
-            (i, d) for i, d, dist in zip(ids_sem, docs_sem, dists_sem)
-            if dist < SEM_THRESHOLD
-        ]
-        ids_sem  = [x[0] for x in sem_valid]
-        docs_sem = [x[1] for x in sem_valid]
-
-        # combine
-        combined_ids  = ids_exact + ids_sem
-        combined_docs = docs_exact + docs_sem
-
-
-        if not combined_docs:
+        if not relevant_results:
             print("[debug] No valid domain context → strict refusal.")
             print("A> Not specified in the provided context.")
             print("   citations: []")
             continue
 
+        context_documents = [
+            result["document"]
+            for result in relevant_results
+        ]
+        citations = [
+            format_citation(result)
+            for result in relevant_results
+        ]
 
-        prompt = make_prompt(q, combined_docs)
+        prompt = make_prompt(q, context_documents)
         answer = ask_openai(prompt, allow_fallback=False)
 
 
@@ -209,12 +256,14 @@ def main():
             print("[debug] Context exists but insufficient → fallback general knowledge.")
             answer = ask_openai(q, allow_fallback=True)
             print("A>", answer)
-            print("   citations:", combined_ids)
+            print("   citations: [] (general-knowledge fallback)")
             continue
 
 
         print("A>", answer)
-        print("   citations:", combined_ids)
+        print("   citations:")
+        for citation in citations:
+            print(f"   - {citation}")
 
 
 if __name__ == "__main__":
