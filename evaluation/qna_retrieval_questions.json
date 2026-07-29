@@ -1,0 +1,178 @@
+[
+  {
+    "id": "requirements-description",
+    "question": "What is the purpose of the Requirements Analysis Phase?",
+    "expected_sections": ["3.4.1"]
+  },
+  {
+    "id": "requirements-responsibilities",
+    "question": "What is the Project Manager responsible for during Requirements Analysis?",
+    "expected_sections": ["3.4.2"]
+  },
+  {
+    "id": "requirements-activities",
+    "question": "What activities are performed to analyze and document requirements?",
+    "expected_sections": ["3.4.3"]
+  },
+  {
+    "id": "requirements-deliverables",
+    "question": "What are the deliverables of the Requirements Analysis Phase?",
+    "expected_sections": ["3.4.4"]
+  },
+  {
+    "id": "requirements-exit",
+    "question": "What exit criteria must be satisfied before leaving Requirements Analysis?",
+    "expected_sections": ["3.4.5"]
+  },
+  {
+    "id": "design-description",
+    "question": "What is the main objective of the Design Phase?",
+    "expected_sections": ["3.5.1"]
+  },
+  {
+    "id": "design-responsibilities",
+    "question": "Who is accountable for successful execution of the Design Phase?",
+    "expected_sections": ["3.5.2"]
+  },
+  {
+    "id": "design-test-plan",
+    "question": "During which Design Phase activity is the final draft Test Plan prepared?",
+    "expected_sections": ["3.5.3"]
+  },
+  {
+    "id": "design-deliverables",
+    "question": "Which documents are formal deliverables of the Design Phase?",
+    "expected_sections": ["3.5.4"]
+  },
+  {
+    "id": "design-exit",
+    "question": "What are the phase-specific exit criteria for the Design Phase?",
+    "expected_sections": ["3.5.5"]
+  },
+  {
+    "id": "development-description",
+    "question": "What happens to the detailed design during the Development Phase?",
+    "expected_sections": ["3.6.1"]
+  },
+  {
+    "id": "development-security",
+    "question": "What must Security confirm during the Development Phase?",
+    "expected_sections": ["3.6.2"]
+  },
+  {
+    "id": "development-activities",
+    "question": "What testing and configuration-control activities occur during development?",
+    "expected_sections": ["3.6.3"]
+  },
+  {
+    "id": "development-deliverables",
+    "question": "What final deliverables are produced during the Development Phase?",
+    "expected_sections": ["3.6.4"]
+  },
+  {
+    "id": "development-exit",
+    "question": "How is readiness to leave the Development Phase determined?",
+    "expected_sections": ["3.6.5", "3.6.7"]
+  },
+  {
+    "id": "implementation-description",
+    "question": "What is the purpose of the Implementation Phase?",
+    "expected_sections": ["3.8.1"]
+  },
+  {
+    "id": "implementation-responsibilities",
+    "question": "What is the Project Manager responsible for during implementation?",
+    "expected_sections": ["3.8.2"]
+  },
+  {
+    "id": "implementation-activities",
+    "question": "What installation and transition activities occur during implementation?",
+    "expected_sections": ["3.8.3"]
+  },
+  {
+    "id": "implementation-deliverables",
+    "question": "What are the required deliverables of the Implementation Phase?",
+    "expected_sections": ["3.8.4"]
+  },
+  {
+    "id": "implementation-exit",
+    "question": "What criteria determine whether implementation is complete?",
+    "expected_sections": ["3.8.5"]
+  },
+  {
+    "id": "policy-purpose",
+    "question": "Why does HHS require the EPLC framework?",
+    "expected_sections": ["3"]
+  },
+  {
+    "id": "policy-scope",
+    "question": "Which HHS IT projects and organizations are covered by the EPLC policy?",
+    "expected_sections": ["5"]
+  },
+  {
+    "id": "policy-incremental-delivery",
+    "question": "How frequently must HHS IT projects deliver new or modified functionality?",
+    "expected_sections": ["6"]
+  },
+  {
+    "id": "policy-principles",
+    "question": "What are the guiding principles of the HHS EPLC policy?",
+    "expected_sections": ["7"]
+  },
+  {
+    "id": "policy-project-manager",
+    "question": "What policy compliance duties belong to HHS IT Project Managers?",
+    "expected_sections": ["8.1"]
+  },
+  {
+    "id": "policy-business-owner",
+    "question": "Who provides funding and approves changes to project cost and schedule?",
+    "expected_sections": ["8.2"]
+  },
+  {
+    "id": "policy-governance-board",
+    "question": "Who conducts Stage Gate Reviews and decides whether projects advance?",
+    "expected_sections": ["8.6"]
+  },
+  {
+    "id": "policy-effectiveness",
+    "question": "What indicators are used to evaluate whether the EPLC policy is effective?",
+    "expected_sections": ["12.1"]
+  },
+  {
+    "id": "negative-vacation",
+    "question": "How many paid vacation days do HHS employees receive?",
+    "expected_sections": [],
+    "should_retrieve": false
+  },
+  {
+    "id": "negative-stock-risk",
+    "question": "What is the current value at risk of an S&P 500 portfolio?",
+    "expected_sections": [],
+    "should_retrieve": false
+  },
+  {
+    "id": "negative-weather",
+    "question": "What will the weather be in New York tomorrow?",
+    "expected_sections": [],
+    "should_retrieve": false
+  },
+  {
+    "id": "negative-python",
+    "question": "How do I sort a Python dictionary by value?",
+    "expected_sections": [],
+    "should_retrieve": false
+  },
+  {
+    "id": "negative-medical",
+    "question": "What medication should a patient take for high blood pressure?",
+    "expected_sections": [],
+    "should_retrieve": false
+  },
+  {
+    "id": "negative-payroll",
+    "question": "On what date will HHS employees receive their next paycheck?",
+    "expected_sections": [],
+    "should_retrieve": false
+  }
+]

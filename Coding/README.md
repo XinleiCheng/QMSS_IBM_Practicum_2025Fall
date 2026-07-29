@@ -9,21 +9,26 @@ The Q&A module enables users to query EPLC frameworks and HHS policies naturally
 ### Core Logic
 The algorithms for this module are encapsulated in **`qna_finalv2.py`**. The workflow includes:
 
-1.  **Hybrid Search Strategy:**
-    * **Semantic Search:** Uses `SentenceTransformer` and ChromaDB to find conceptually related document chunks.
-    * **Exact Keyword Match:** Scans for specific terminology or acronyms to improve precision.
-    * **Threshold Filtering:** Automatically discards retrieved chunks that fall below a relevance score (`SEM_THRESHOLD`) to prevent noise.
+1.  **Grounded Semantic Retrieval:**
+    * **Semantic Search:** Uses `BAAI/bge-base-en-v1.5` and a versioned ChromaDB index to find conceptually related document chunks.
+    * **Evaluated Filtering:** Keeps chunks with cosine similarity of at least `MIN_SIMILARITY`; the default `0.61` was selected using checked-in positive and out-of-domain evaluation questions.
+    * **Traceable Metadata:** Each result retains its document, section number, section title, chunk type, and similarity.
 
 2.  **Context Assembly & Answering:**
-    * The system aggregates validated chunks from `EPLCFramework_db` and `HHS_db`.
-    * **Strict Mode:** Prioritizes answering based solely on the provided context.
-    * **Fallback Logic:** If `qna_finalv2.py` determines the context is insufficient ("Not specified in the provided context"), it can optionally pivot to general knowledge depending on configuration.
+    * The system reads the unified `qna_v4_bge_base_en_v1_5` index.
+    * **Strict Mode:** Answers only from retrieved EPLC/HHS sources and cites them using `[Source N]`.
+    * **Refusal:** If the sources are insufficient, the application returns `Not specified in the provided context.` It does not fall back to general knowledge.
 
 ### Key File
 * **`qna_finalv2.py`**:
-    * Implements the full RAG pipeline (retrieval, re-ranking, prompt engineering).
+    * Implements the full RAG pipeline (retrieval, similarity ranking, prompt engineering).
     * Manages database connections and query logic.
-    * Controls the fallback mechanism for "no context" scenarios.
+    * Distinguishes grounded answers, refusals, invalid input, and system errors.
+
+### Q&A data and evaluation
+
+* `Q&A/qna_data_pipeline.py` rebuilds traceable chunks and versioned indexes without overwriting an existing database.
+* `Q&A/evaluate_retrieval.py` reports Recall@1/3/5/6, MRR, and threshold specificity from `evaluation/qna_retrieval_questions.json`.
 
 ---
 

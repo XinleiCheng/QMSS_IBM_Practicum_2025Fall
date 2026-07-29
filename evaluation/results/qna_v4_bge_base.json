@@ -1,0 +1,659 @@
+{
+  "question_count": 34,
+  "positive_question_count": 28,
+  "negative_question_count": 6,
+  "metrics": {
+    "recall_at_1": 0.5714,
+    "recall_at_3": 0.8214,
+    "recall_at_5": 1.0,
+    "recall_at_6": 1.0,
+    "mrr": 0.7179
+  },
+  "section_metrics": {
+    "recall_at_1": 0.5714,
+    "recall_at_3": 0.8214,
+    "recall_at_5": 1.0,
+    "recall_at_6": 1.0,
+    "mrr": 0.7315
+  },
+  "threshold_metrics": {
+    "similarity_threshold": 0.58,
+    "positive_recall": 0.9643,
+    "negative_specificity": 1.0,
+    "false_positive_rate": 0.0,
+    "balanced_accuracy": 0.9821
+  },
+  "recommended_threshold": {
+    "similarity_threshold": 0.61,
+    "positive_recall": 0.9643,
+    "negative_specificity": 1.0,
+    "balanced_accuracy": 0.9821
+  },
+  "details": [
+    {
+      "id": "requirements-description",
+      "expected_sections": [
+        "3.4.1"
+      ],
+      "should_retrieve": true,
+      "first_relevant_rank": 1,
+      "first_relevant_section_rank": 1,
+      "top_similarity": 0.7858,
+      "relevant_similarity": 0.7858,
+      "top_sections": [
+        "3.4.1",
+        "3.4.1",
+        "3.4.7",
+        "3.4.3",
+        "3.4.3",
+        "3.5.1"
+      ]
+    },
+    {
+      "id": "requirements-responsibilities",
+      "expected_sections": [
+        "3.4.2"
+      ],
+      "should_retrieve": true,
+      "first_relevant_rank": 1,
+      "first_relevant_section_rank": 1,
+      "top_similarity": 0.8111,
+      "relevant_similarity": 0.8111,
+      "top_sections": [
+        "3.4.2",
+        "3.5.2",
+        "3.6.2",
+        "3.8.2",
+        "3.4.1",
+        "3.4.1"
+      ]
+    },
+    {
+      "id": "requirements-activities",
+      "expected_sections": [
+        "3.4.3"
+      ],
+      "should_retrieve": true,
+      "first_relevant_rank": 1,
+      "first_relevant_section_rank": 1,
+      "top_similarity": 0.7459,
+      "relevant_similarity": 0.7459,
+      "top_sections": [
+        "3.4.3",
+        "3.4.3",
+        "3.4.3",
+        "3.4.1",
+        "3.6.3",
+        "3.4.3"
+      ]
+    },
+    {
+      "id": "requirements-deliverables",
+      "expected_sections": [
+        "3.4.4"
+      ],
+      "should_retrieve": true,
+      "first_relevant_rank": 3,
+      "first_relevant_section_rank": 2,
+      "top_similarity": 0.7381,
+      "relevant_similarity": 0.69,
+      "top_sections": [
+        "3.4.1",
+        "3.4.1",
+        "3.4.4",
+        "3.4.3",
+        "3.4.3",
+        "3.5.1"
+      ]
+    },
+    {
+      "id": "requirements-exit",
+      "expected_sections": [
+        "3.4.5"
+      ],
+      "should_retrieve": true,
+      "first_relevant_rank": 1,
+      "first_relevant_section_rank": 1,
+      "top_similarity": 0.7337,
+      "relevant_similarity": 0.7337,
+      "top_sections": [
+        "3.4.5",
+        "3.6.5",
+        "3.6.5",
+        "3.5.5",
+        "3.8.5",
+        "3.8.5"
+      ]
+    },
+    {
+      "id": "design-description",
+      "expected_sections": [
+        "3.5.1"
+      ],
+      "should_retrieve": true,
+      "first_relevant_rank": 1,
+      "first_relevant_section_rank": 1,
+      "top_similarity": 0.6801,
+      "relevant_similarity": 0.6801,
+      "top_sections": [
+        "3.5.1",
+        "3.5.3",
+        "3.5.1",
+        "3.5.3",
+        "3.5.1",
+        "3.5.5"
+      ]
+    },
+    {
+      "id": "design-responsibilities",
+      "expected_sections": [
+        "3.5.2"
+      ],
+      "should_retrieve": true,
+      "first_relevant_rank": 1,
+      "first_relevant_section_rank": 1,
+      "top_similarity": 0.661,
+      "relevant_similarity": 0.661,
+      "top_sections": [
+        "3.5.2",
+        "3.8.2",
+        "3.5.2",
+        "3.6.2",
+        "3.5.5",
+        "3.5.3"
+      ]
+    },
+    {
+      "id": "design-test-plan",
+      "expected_sections": [
+        "3.5.3"
+      ],
+      "should_retrieve": true,
+      "first_relevant_rank": 2,
+      "first_relevant_section_rank": 2,
+      "top_similarity": 0.7064,
+      "relevant_similarity": 0.6941,
+      "top_sections": [
+        "3.6.3",
+        "3.5.3",
+        "3.5.3",
+        "3.5.3",
+        "3.6.3",
+        "3.5.3"
+      ]
+    },
+    {
+      "id": "design-deliverables",
+      "expected_sections": [
+        "3.5.4"
+      ],
+      "should_retrieve": true,
+      "first_relevant_rank": 1,
+      "first_relevant_section_rank": 1,
+      "top_similarity": 0.7446,
+      "relevant_similarity": 0.7446,
+      "top_sections": [
+        "3.5.4",
+        "3.5.4",
+        "3.5.3",
+        "3.5.1",
+        "3.4.4",
+        "3.5.1"
+      ]
+    },
+    {
+      "id": "design-exit",
+      "expected_sections": [
+        "3.5.5"
+      ],
+      "should_retrieve": true,
+      "first_relevant_rank": 1,
+      "first_relevant_section_rank": 1,
+      "top_similarity": 0.8293,
+      "relevant_similarity": 0.8293,
+      "top_sections": [
+        "3.5.5",
+        "3.4.5",
+        "3.6.5",
+        "3.4.5",
+        "3.5.5",
+        "3.6.5"
+      ]
+    },
+    {
+      "id": "development-description",
+      "expected_sections": [
+        "3.6.1"
+      ],
+      "should_retrieve": true,
+      "first_relevant_rank": 3,
+      "first_relevant_section_rank": 3,
+      "top_similarity": 0.7103,
+      "relevant_similarity": 0.6875,
+      "top_sections": [
+        "3.5.1",
+        "3.5.6",
+        "3.6.1",
+        "3.5.1",
+        "3.5.1",
+        "3.5.6"
+      ]
+    },
+    {
+      "id": "development-security",
+      "expected_sections": [
+        "3.6.2"
+      ],
+      "should_retrieve": true,
+      "first_relevant_rank": 1,
+      "first_relevant_section_rank": 1,
+      "top_similarity": 0.6778,
+      "relevant_similarity": 0.6778,
+      "top_sections": [
+        "3.6.2",
+        "3.4.2",
+        "3.8.5",
+        "3.6.3",
+        "3.6.1",
+        "3.4.2"
+      ]
+    },
+    {
+      "id": "development-activities",
+      "expected_sections": [
+        "3.6.3"
+      ],
+      "should_retrieve": true,
+      "first_relevant_rank": 1,
+      "first_relevant_section_rank": 1,
+      "top_similarity": 0.6961,
+      "relevant_similarity": 0.6961,
+      "top_sections": [
+        "3.6.3",
+        "3.6.3",
+        "3.6.1",
+        "3.6.3",
+        "3.6.3",
+        "3.5.3"
+      ]
+    },
+    {
+      "id": "development-deliverables",
+      "expected_sections": [
+        "3.6.4"
+      ],
+      "should_retrieve": true,
+      "first_relevant_rank": 1,
+      "first_relevant_section_rank": 1,
+      "top_similarity": 0.6948,
+      "relevant_similarity": 0.6948,
+      "top_sections": [
+        "3.6.4",
+        "3.8.4",
+        "3.5.4",
+        "3.6.3",
+        "3.8.4",
+        "3.8.4"
+      ]
+    },
+    {
+      "id": "development-exit",
+      "expected_sections": [
+        "3.6.5",
+        "3.6.7"
+      ],
+      "should_retrieve": true,
+      "first_relevant_rank": 2,
+      "first_relevant_section_rank": 2,
+      "top_similarity": 0.6875,
+      "relevant_similarity": 0.6431,
+      "top_sections": [
+        "3.4.5",
+        "3.6.5",
+        "3.5.5",
+        "3.6.3",
+        "3.8.5",
+        "3.8.5"
+      ]
+    },
+    {
+      "id": "implementation-description",
+      "expected_sections": [
+        "3.8.1"
+      ],
+      "should_retrieve": true,
+      "first_relevant_rank": 3,
+      "first_relevant_section_rank": 2,
+      "top_similarity": 0.694,
+      "relevant_similarity": 0.6839,
+      "top_sections": [
+        "3.8.3",
+        "3.8.3",
+        "3.8.1",
+        "3.8.3",
+        "3.6.3",
+        "3.5.1"
+      ]
+    },
+    {
+      "id": "implementation-responsibilities",
+      "expected_sections": [
+        "3.8.2"
+      ],
+      "should_retrieve": true,
+      "first_relevant_rank": 1,
+      "first_relevant_section_rank": 1,
+      "top_similarity": 0.8145,
+      "relevant_similarity": 0.8145,
+      "top_sections": [
+        "3.8.2",
+        "3.5.2",
+        "3.6.2",
+        "3.4.2",
+        "3.4.2",
+        "3.8.2"
+      ]
+    },
+    {
+      "id": "implementation-activities",
+      "expected_sections": [
+        "3.8.3"
+      ],
+      "should_retrieve": true,
+      "first_relevant_rank": 2,
+      "first_relevant_section_rank": 2,
+      "top_similarity": 0.7363,
+      "relevant_similarity": 0.7109,
+      "top_sections": [
+        "3.8.1",
+        "3.8.3",
+        "3.8.3",
+        "3.8.3",
+        "3.8.3",
+        "3.6.3"
+      ]
+    },
+    {
+      "id": "implementation-deliverables",
+      "expected_sections": [
+        "3.8.4"
+      ],
+      "should_retrieve": true,
+      "first_relevant_rank": 5,
+      "first_relevant_section_rank": 4,
+      "top_similarity": 0.6792,
+      "relevant_similarity": 0.6561,
+      "top_sections": [
+        "3.8.3",
+        "3.8.1",
+        "3.4.4",
+        "3.8.3",
+        "3.8.4",
+        "3.5.4"
+      ]
+    },
+    {
+      "id": "implementation-exit",
+      "expected_sections": [
+        "3.8.5"
+      ],
+      "should_retrieve": true,
+      "first_relevant_rank": 5,
+      "first_relevant_section_rank": 5,
+      "top_similarity": 0.6816,
+      "relevant_similarity": 0.634,
+      "top_sections": [
+        "3.6.5",
+        "3.4.5",
+        "3.5.5",
+        "3.8.1",
+        "3.8.5",
+        "3.8.5"
+      ]
+    },
+    {
+      "id": "policy-purpose",
+      "expected_sections": [
+        "3"
+      ],
+      "should_retrieve": true,
+      "first_relevant_rank": 1,
+      "first_relevant_section_rank": 1,
+      "top_similarity": 0.7554,
+      "relevant_similarity": 0.7554,
+      "top_sections": [
+        "3",
+        "7",
+        "3.6.2",
+        "4",
+        "3.4.1",
+        "3.5.1"
+      ]
+    },
+    {
+      "id": "policy-scope",
+      "expected_sections": [
+        "5"
+      ],
+      "should_retrieve": true,
+      "first_relevant_rank": 4,
+      "first_relevant_section_rank": 4,
+      "top_similarity": 0.7598,
+      "relevant_similarity": 0.7478,
+      "top_sections": [
+        "4",
+        "8.1",
+        "3",
+        "5",
+        "8.5",
+        "6"
+      ]
+    },
+    {
+      "id": "policy-incremental-delivery",
+      "expected_sections": [
+        "6"
+      ],
+      "should_retrieve": true,
+      "first_relevant_rank": 1,
+      "first_relevant_section_rank": 1,
+      "top_similarity": 0.7304,
+      "relevant_similarity": 0.7304,
+      "top_sections": [
+        "6",
+        "3.8.2",
+        "3.8.3",
+        "3.8.3",
+        "2",
+        "5"
+      ]
+    },
+    {
+      "id": "policy-principles",
+      "expected_sections": [
+        "7"
+      ],
+      "should_retrieve": true,
+      "first_relevant_rank": 2,
+      "first_relevant_section_rank": 2,
+      "top_similarity": 0.7472,
+      "relevant_similarity": 0.7446,
+      "top_sections": [
+        "4",
+        "7",
+        "3",
+        "8.1",
+        "6",
+        "5"
+      ]
+    },
+    {
+      "id": "policy-project-manager",
+      "expected_sections": [
+        "8.1"
+      ],
+      "should_retrieve": true,
+      "first_relevant_rank": 1,
+      "first_relevant_section_rank": 1,
+      "top_similarity": 0.7936,
+      "relevant_similarity": 0.7936,
+      "top_sections": [
+        "8.1",
+        "8.5",
+        "8.2",
+        "4",
+        "3",
+        "3.4.2"
+      ]
+    },
+    {
+      "id": "policy-business-owner",
+      "expected_sections": [
+        "8.2"
+      ],
+      "should_retrieve": true,
+      "first_relevant_rank": 4,
+      "first_relevant_section_rank": 4,
+      "top_similarity": 0.6045,
+      "relevant_similarity": 0.5655,
+      "top_sections": [
+        "3.8.2",
+        "14",
+        "3.6.2",
+        "8.2",
+        "3.5.2",
+        "8.8"
+      ]
+    },
+    {
+      "id": "policy-governance-board",
+      "expected_sections": [
+        "8.6"
+      ],
+      "should_retrieve": true,
+      "first_relevant_rank": 5,
+      "first_relevant_section_rank": 5,
+      "top_similarity": 0.7043,
+      "relevant_similarity": 0.6116,
+      "top_sections": [
+        "3.6.7",
+        "3.4.7",
+        "3.5.7",
+        "8.4",
+        "8.6",
+        "3.8.7"
+      ]
+    },
+    {
+      "id": "policy-effectiveness",
+      "expected_sections": [
+        "12.1"
+      ],
+      "should_retrieve": true,
+      "first_relevant_rank": 1,
+      "first_relevant_section_rank": 1,
+      "top_similarity": 0.7829,
+      "relevant_similarity": 0.7829,
+      "top_sections": [
+        "12.1",
+        "3",
+        "7",
+        "11",
+        "4",
+        "3.5.2"
+      ]
+    },
+    {
+      "id": "negative-vacation",
+      "expected_sections": [],
+      "should_retrieve": false,
+      "top_similarity": 0.5716,
+      "would_retrieve": false,
+      "top_sections": [
+        "11",
+        "6",
+        "8.5",
+        "3.5.2",
+        "14",
+        "5"
+      ]
+    },
+    {
+      "id": "negative-stock-risk",
+      "expected_sections": [],
+      "should_retrieve": false,
+      "top_similarity": 0.5445,
+      "would_retrieve": false,
+      "top_sections": [
+        "3.8.4",
+        "3.6.4",
+        "3.5.2",
+        "3.6.2",
+        "3.5.2",
+        "3.4.3"
+      ]
+    },
+    {
+      "id": "negative-weather",
+      "expected_sections": [],
+      "should_retrieve": false,
+      "top_similarity": 0.3864,
+      "would_retrieve": false,
+      "top_sections": [
+        "3.5.3",
+        "3.5.4",
+        "3.5.4",
+        "3.8.4",
+        "3.5.3",
+        "3.5.2"
+      ]
+    },
+    {
+      "id": "negative-python",
+      "expected_sections": [],
+      "should_retrieve": false,
+      "top_similarity": 0.4071,
+      "would_retrieve": false,
+      "top_sections": [
+        "3.8.3",
+        "1",
+        "3.8.5",
+        "3.4.5",
+        "3.6.4",
+        "3.5.6"
+      ]
+    },
+    {
+      "id": "negative-medical",
+      "expected_sections": [],
+      "should_retrieve": false,
+      "top_similarity": 0.4605,
+      "would_retrieve": false,
+      "top_sections": [
+        "8.4",
+        "12",
+        "3.8.2",
+        "3.4.2",
+        "3.5.3",
+        "3.4.4"
+      ]
+    },
+    {
+      "id": "negative-payroll",
+      "expected_sections": [],
+      "should_retrieve": false,
+      "top_similarity": 0.5647,
+      "would_retrieve": false,
+      "top_sections": [
+        "11",
+        "14",
+        "12",
+        "6",
+        "3.8.3",
+        "3.5.2"
+      ]
+    }
+  ],
+  "index": "Data/Vector DataBase/qna_v4_bge_base_en_v1_5",
+  "model": "BAAI/bge-base-en-v1.5"
+}

@@ -10,6 +10,7 @@ os.environ.setdefault("MKL_NUM_THREADS", "1")
 os.environ.setdefault("VECLIB_MAXIMUM_THREADS", "1")
 os.environ.setdefault("NUMEXPR_NUM_THREADS", "1")
 os.environ.setdefault("PYTORCH_ENABLE_MPS_FALLBACK", "1")
+os.environ.setdefault("ANONYMIZED_TELEMETRY", "False")
 
 # These libraries must be imported after the runtime settings above.
 from chromadb import PersistentClient  # noqa: E402
@@ -35,12 +36,12 @@ DB_ROOT = (
 )
 
 TOP_K = int(os.getenv("TOP_K", "6"))
-SEM_THRESHOLD = float(os.getenv("SEM_THRESHOLD", "0.75"))
+MIN_SIMILARITY = float(os.getenv("MIN_SIMILARITY", "0.61"))
 MAX_QUESTION_LENGTH = int(os.getenv("MAX_QUESTION_LENGTH", "1000"))
 CHAT_MODEL = os.getenv("CHAT_MODEL", "gpt-4o-mini")
 EMBEDDING_MODEL = os.getenv(
     "EMBEDDING_MODEL",
-    "BAAI/bge-large-en-v1.5",
+    "BAAI/bge-base-en-v1.5",
 )
 QUERY_INSTRUCTION = os.getenv(
     "QUERY_INSTRUCTION",
@@ -49,8 +50,7 @@ QUERY_INSTRUCTION = os.getenv(
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 LOG_LEVEL = os.getenv("LOG_LEVEL", "INFO").upper()
 
-DB_EPLC_PATH = os.path.join(DB_ROOT, "chroma_db_EPLC final Phase")
-DB_HHS_PATH = os.path.join(DB_ROOT, "chroma_eplc_policy")
+QNA_DB_PATH = os.path.join(DB_ROOT, "qna_v4_bge_base_en_v1_5")
 REFUSAL_ANSWER = "Not specified in the provided context."
 
 logging.basicConfig(
@@ -84,14 +84,10 @@ def create_embedding_model(model_name=EMBEDDING_MODEL):
 
 
 def connect_collections():
-    require_existing_database(DB_EPLC_PATH, "EPLC")
-    require_existing_database(DB_HHS_PATH, "HHS")
-
-    eplc_db = PersistentClient(path=DB_EPLC_PATH)
-    hhs_db = PersistentClient(path=DB_HHS_PATH)
+    require_existing_database(QNA_DB_PATH, "Q&A")
+    qna_db = PersistentClient(path=QNA_DB_PATH)
     return {
-        "EPLC": get_single_collection(eplc_db, "EPLC"),
-        "HHS": get_single_collection(hhs_db, "HHS"),
+        "Q&A": get_single_collection(qna_db, "Q&A"),
     }
 
 
@@ -129,6 +125,7 @@ def query_collection(collection, database_label, query_embedding, k):
                 "id": document_id,
                 "document": document,
                 "distance": float(distance),
+                "similarity": 1.0 - float(distance),
                 "metadata": metadata or {},
                 "database": database_label,
             }
@@ -160,40 +157,43 @@ def retrieve(query, embedding_model, collections, k=TOP_K):
         normalize_embeddings=True,
     ).tolist()
 
-    results = query_collection(
-        collections["EPLC"],
-        "EPLC",
-        query_embedding,
-        k,
-    )
-    results.extend(
-        query_collection(
-            collections["HHS"],
-            "HHS",
-            query_embedding,
-            k,
+    results = []
+    for database_label, collection in collections.items():
+        results.extend(
+            query_collection(
+                collection,
+                database_label,
+                query_embedding,
+                k,
+            )
         )
-    )
+
+    if not results:
+        return []
 
     results = deduplicate_results(results)
     results.sort(key=lambda result: result["distance"])
     return results[:k]
 
 
-def filter_relevant_results(results, threshold=SEM_THRESHOLD):
+def filter_relevant_results(results, min_similarity=MIN_SIMILARITY):
     return [
         result
         for result in results
-        if result["distance"] < threshold
+        if result["similarity"] >= min_similarity
     ]
 
 
 def format_citation(result):
     metadata = result["metadata"]
     citation_parts = [
-        metadata.get("source") or metadata.get("document"),
+        (
+            metadata.get("document_title")
+            or metadata.get("source")
+            or metadata.get("document")
+        ),
         metadata.get("section_number"),
-        metadata.get("title"),
+        metadata.get("section_title") or metadata.get("title"),
     ]
     citation_parts = [
         str(part).strip()
@@ -245,6 +245,7 @@ def build_source_list(results, source_numbers=None):
                 "number": source_number,
                 "citation": format_citation(result),
                 "distance": result["distance"],
+                "similarity": result["similarity"],
             }
         )
     return sources

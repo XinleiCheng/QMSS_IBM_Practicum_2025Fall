@@ -33,9 +33,14 @@ vector_db/
 *.sqlite3-wal
 *.sqlite3-shm
 
+# Local Q&A model/chunk experiments (the selected v4 artifacts remain tracked)
+Data/Q&A Processed/chunks_v2.json
+Data/Q&A Processed/chunks_v3.json
+Data/Vector DataBase/qna_v2_*/
+Data/Vector DataBase/qna_v3_*/
+
 # Editors and operating systems
 .DS_Store
 .idea/
 .vscode/
 *.swp
-

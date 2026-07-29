@@ -1,0 +1,9 @@
+{
+  "schema_version": "4.0",
+  "collection_name": "qna_knowledge_v4",
+  "embedding_model": "BAAI/bge-base-en-v1.5",
+  "distance_metric": "cosine",
+  "embedding_dimension": 768,
+  "chunk_count": 172,
+  "prepared_dataset": "Data/Q&A Processed/chunks_v4.json"
+}

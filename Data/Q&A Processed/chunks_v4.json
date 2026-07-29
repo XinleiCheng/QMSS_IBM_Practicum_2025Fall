@@ -1,0 +1,2938 @@
+{
+  "schema_version": "4.0",
+  "chunking": {
+    "strategy": "paragraph_preserving_sentence_window",
+    "max_words": 220,
+    "overlap_words": 40
+  },
+  "sources": [
+    {
+      "path": "Data/EPLC Framework/EPLC Cleaned Data/Requirements_Analysis_Phase_3.4.json",
+      "sha256": "56a24252772af53f5183077e1b6da539b845bb6e5de124aae042ad71495d0e10"
+    },
+    {
+      "path": "Data/EPLC Framework/EPLC Cleaned Data/Design_Phase_3.5_MERGED_FINAL_FIXED_1765597020.json",
+      "sha256": "48cd94fa9ed3c4b2051148f5893804a5b918e82e4b102992390cc5ddf98f32e6"
+    },
+    {
+      "path": "Data/EPLC Framework/EPLC Cleaned Data/Development_Phase_3.6_MERGED_FINAL_1765598996.json",
+      "sha256": "376556dd7d91ebb017d2f16e6c49ca44feb806a6b48c315bbb4bdc0bfb80a03c"
+    },
+    {
+      "path": "Data/EPLC Framework/EPLC Cleaned Data/Implementation_Phase_3.8.json",
+      "sha256": "9001f6a728b67ac1510052db9895464c8f69e335f45cc0be85b85dd211d46657"
+    },
+    {
+      "path": "Data/HHS EPLC Website/HHS EPLC Website.json",
+      "sha256": "044791465ed47189cb7eb360ecab35a2281d8254220de9152d26b992552b2773"
+    }
+  ],
+  "statistics": {
+    "chunk_count": 172,
+    "eplc_chunk_count": 149,
+    "hhs_policy_chunk_count": 23
+  },
+  "chunks": [
+    {
+      "id": "qna-3-4-1-00-8b4466db0eef7117",
+      "document": "HHS EPLC Framework\nSection 3.4.1: Description\n\nThis section covers: During the Requirements Analysis Phase, the business (project in-scope) requirements that were documented during the Concept Phase in...; Detailed application requirements (both functional and non-functional) are required to permit detailed project management planning, execution and control..",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Requirements_Analysis_Phase_3.4.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.4.1",
+        "section_title": "Description",
+        "chunk_index": 0,
+        "chunk_count": 3,
+        "chunk_kind": "section_overview",
+        "content_word_count": 39,
+        "schema_version": "4.0",
+        "phase": "Requirements Analysis Phase"
+      }
+    },
+    {
+      "id": "qna-3-4-1-01-421f5940c6b51f94",
+      "document": "HHS EPLC Framework\nSection 3.4.1: Description\n\nDuring the Requirements Analysis Phase, the business (project in-scope) requirements that were documented during the Concept Phase in an earlier phase are validated and further analyzed and decomposed into functional and non-functional requirements that define the Business Product in more detail with regard to inputs, processes, outputs, and interfaces. If appropriate, a logical depiction of the data entities, relationships and attributes of the system/application is also created. During the Requirements Analysis Phase, the initial strategy for testing and implementation should be considered. In addition, the work planned for future phases is redefined, if necessary, based on information acquired during the Requirements Analysis Phase. The Requirements Analysis Phase ends with a review to determine readiness to proceed to the Design Phase.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Requirements_Analysis_Phase_3.4.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.4.1",
+        "section_title": "Description",
+        "chunk_index": 1,
+        "chunk_count": 3,
+        "chunk_kind": "section_content",
+        "content_word_count": 120,
+        "schema_version": "4.0",
+        "phase": "Requirements Analysis Phase"
+      }
+    },
+    {
+      "id": "qna-3-4-1-02-d94c713caf3bb203",
+      "document": "HHS EPLC Framework\nSection 3.4.1: Description\n\nDetailed application requirements (both functional and non-functional) are required to permit detailed project management planning, execution and control. If detailed requirements and subsequent planning identify a breach of the project-level cost, schedule or performance baselines established at the end of the planning phase, a formal change to the Project Baselines should be requested.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Requirements_Analysis_Phase_3.4.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.4.1",
+        "section_title": "Description",
+        "chunk_index": 2,
+        "chunk_count": 3,
+        "chunk_kind": "section_content",
+        "content_word_count": 53,
+        "schema_version": "4.0",
+        "phase": "Requirements Analysis Phase"
+      }
+    },
+    {
+      "id": "qna-3-4-2-00-33364174abfdcb8d",
+      "document": "HHS EPLC Framework\nSection 3.4.2: Responsibilities\n\nThis section covers: Business Owner; End Users; Project Manager; Integrated Project Team; Contracting Officer; Critical Partners; • Enterprise Architecture; Ensure the assessment of required security controls (per NIST guidelines) has been completed..",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Requirements_Analysis_Phase_3.4.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.4.2",
+        "section_title": "Responsibilities",
+        "chunk_index": 0,
+        "chunk_count": 9,
+        "chunk_kind": "section_overview",
+        "content_word_count": 32,
+        "schema_version": "4.0",
+        "phase": "Requirements Analysis Phase"
+      }
+    },
+    {
+      "id": "qna-3-4-2-01-57b76b5e9ffad8a8",
+      "document": "HHS EPLC Framework\nSection 3.4.2: Responsibilities\n\nBusiness Owner: The Business Owner participates in the Requirements activities and may approve the final requirements.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Requirements_Analysis_Phase_3.4.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.4.2",
+        "section_title": "Responsibilities",
+        "chunk_index": 1,
+        "chunk_count": 9,
+        "chunk_kind": "section_content",
+        "content_word_count": 16,
+        "schema_version": "4.0",
+        "phase": "Requirements Analysis Phase"
+      }
+    },
+    {
+      "id": "qna-3-4-2-02-7f0f9600b9fb0757",
+      "document": "HHS EPLC Framework\nSection 3.4.2: Responsibilities\n\nEnd Users: The End Users participate in the development of detail of functional requirement and provide input into non-functional requirements.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Requirements_Analysis_Phase_3.4.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.4.2",
+        "section_title": "Responsibilities",
+        "chunk_index": 2,
+        "chunk_count": 9,
+        "chunk_kind": "section_content",
+        "content_word_count": 20,
+        "schema_version": "4.0",
+        "phase": "Requirements Analysis Phase"
+      }
+    },
+    {
+      "id": "qna-3-4-2-03-8d477db230783264",
+      "document": "HHS EPLC Framework\nSection 3.4.2: Responsibilities\n\nProject Manager: The Project Manager is responsible and accountable for the successful planning and execution of the Requirements Analysis Phase. The Project Manager is responsible for leading the Integrated Project Team that accomplishes the Phase tasks and deliverables.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Requirements_Analysis_Phase_3.4.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.4.2",
+        "section_title": "Responsibilities",
+        "chunk_index": 3,
+        "chunk_count": 9,
+        "chunk_kind": "section_content",
+        "content_word_count": 38,
+        "schema_version": "4.0",
+        "phase": "Requirements Analysis Phase"
+      }
+    },
+    {
+      "id": "qna-3-4-2-04-89dfbd9b3df085aa",
+      "document": "HHS EPLC Framework\nSection 3.4.2: Responsibilities\n\nIntegrated Project Team: The Integrated Project Team members (regardless of the organization of permanent assignment) are responsible for accomplishing assigned tasks as directed by the Project Manager.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Requirements_Analysis_Phase_3.4.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.4.2",
+        "section_title": "Responsibilities",
+        "chunk_index": 4,
+        "chunk_count": 9,
+        "chunk_kind": "section_content",
+        "content_word_count": 27,
+        "schema_version": "4.0",
+        "phase": "Requirements Analysis Phase"
+      }
+    },
+    {
+      "id": "qna-3-4-2-05-f8fed7223816b9ea",
+      "document": "HHS EPLC Framework\nSection 3.4.2: Responsibilities\n\nContracting Officer: The Contracting Officer is responsible and accountable for preparing solicitation documents under the guidance of the Project Manager.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Requirements_Analysis_Phase_3.4.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.4.2",
+        "section_title": "Responsibilities",
+        "chunk_index": 5,
+        "chunk_count": 9,
+        "chunk_kind": "section_content",
+        "content_word_count": 20,
+        "schema_version": "4.0",
+        "phase": "Requirements Analysis Phase"
+      }
+    },
+    {
+      "id": "qna-3-4-2-06-3f57e6adbee5c5ec",
+      "document": "HHS EPLC Framework\nSection 3.4.2: Responsibilities\n\nCritical Partners: The Critical Partners provide oversight, advice and counsel to the Project Manager to ensure that the Requirements Document addresses relevant standards. Additionally, Critical Partners provide information, judgments, and recommendations during the Requirements Review.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Requirements_Analysis_Phase_3.4.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.4.2",
+        "section_title": "Responsibilities",
+        "chunk_index": 6,
+        "chunk_count": 9,
+        "chunk_kind": "section_content",
+        "content_word_count": 35,
+        "schema_version": "4.0",
+        "phase": "Requirements Analysis Phase"
+      }
+    },
+    {
+      "id": "qna-3-4-2-07-af88758aec4b3724",
+      "document": "HHS EPLC Framework\nSection 3.4.2: Responsibilities\n\n• Enterprise Architecture: Find out if requirements provide a suitable basis for subsequent design activities and all service components have been appropriately identified. Determine if technologies and other requirements are consistent with the Enterprise Architecture. Identify relevant technical and/or service standards that will apply to or constrain solution design and development activities. Determine if the Requirements document contains a traceability matrix that is complete and plans are complete to track technical changes. Establish that the Business Process Models and Logical Data Models are documented at the proper level. • Security: Ensure that an assessment of the required information security and privacy controls has been completed and determine if requirements reflect alignment with established information security standards including the FIPS-199 Categorization and that the Accreditation Boundary is established with all dependencies and relationships. Ensure the assessment of required security controls (per NIST guidelines) has been completed. • Acquisition: Review acquisition strategy to ensure it includes necessary requirements analysis, alternatives analysis, and procurement and contract award plans.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Requirements_Analysis_Phase_3.4.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.4.2",
+        "section_title": "Responsibilities",
+        "chunk_index": 7,
+        "chunk_count": 9,
+        "chunk_kind": "section_content",
+        "content_word_count": 165,
+        "schema_version": "4.0",
+        "phase": "Requirements Analysis Phase"
+      }
+    },
+    {
+      "id": "qna-3-4-2-08-f846441ba042ed48",
+      "document": "HHS EPLC Framework\nSection 3.4.2: Responsibilities\n\nEnsure the assessment of required security controls (per NIST guidelines) has been completed. • Acquisition: Review acquisition strategy to ensure it includes necessary requirements analysis, alternatives analysis, and procurement and contract award plans. Ensure that there is sufficient information to make management decisions and evaluate vendor proposals. • Budget: Ascertain if requirements are in accord with project-level cost baselines established at the end of the Planning Phase or a formal change to the Project Baselines has been requested. • Finance: Determine if financial management requirements are in accordance with requirements established at the end of the Planning Phase or a formal change to the Project Baselines has been requested. • HR: By reviewing an update of the Project Management Plan, ascertain if staffing and organizational requirements have been fully documented. • Section 508: Make certain that the requirements for applicable Section 508 standards have been identified. • CPIC: Confirm the Requirements Document contains a traceability matrix, business process model and logical data model. • Performance: Determine if the requirements are in accordance with project-level performance baselines established at the end of the Planning Phase or a formal change to the Project Baselines has been requested. • Records Management: Make certain that the requirements for applicable records management standards have been identified.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Requirements_Analysis_Phase_3.4.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.4.2",
+        "section_title": "Responsibilities",
+        "chunk_index": 8,
+        "chunk_count": 9,
+        "chunk_kind": "section_content",
+        "content_word_count": 211,
+        "schema_version": "4.0",
+        "phase": "Requirements Analysis Phase"
+      }
+    },
+    {
+      "id": "qna-3-4-3-00-c2a21a317181f428",
+      "document": "HHS EPLC Framework\nSection 3.4.3: Activities\n\nThis section covers: The tasks described below are performed during the Requirements Analysis Phase; • Requirements elicitation is done during sessions with customers.; The results of these activities are captured in the Acquisition Strategy, which also requires additional items not covered...; The Acquisition Strategy becomes critical after the Requirements Document has been approved..",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Requirements_Analysis_Phase_3.4.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.4.3",
+        "section_title": "Activities",
+        "chunk_index": 0,
+        "chunk_count": 5,
+        "chunk_kind": "section_overview",
+        "content_word_count": 53,
+        "schema_version": "4.0",
+        "phase": "Requirements Analysis Phase"
+      }
+    },
+    {
+      "id": "qna-3-4-3-01-02e16edae3b23382",
+      "document": "HHS EPLC Framework\nSection 3.4.3: Activities\n\nThe tasks described below are performed during the Requirements Analysis Phase:",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Requirements_Analysis_Phase_3.4.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.4.3",
+        "section_title": "Activities",
+        "chunk_index": 1,
+        "chunk_count": 5,
+        "chunk_kind": "section_content",
+        "content_word_count": 11,
+        "schema_version": "4.0",
+        "phase": "Requirements Analysis Phase"
+      }
+    },
+    {
+      "id": "qna-3-4-3-02-b8871003c5920411",
+      "document": "HHS EPLC Framework\nSection 3.4.3: Activities\n\n• Requirements elicitation is done during sessions with customers. • Business needs are consolidated and affirmed. The functional requirements and the data requirements are then consolidated. The functional requirements are connected to the data requirements. • The Requirements Document (RD) is a record of the above requirements. This can be established as a matrix and tracked for satisfaction of every module of the system as development progresses. • Documentation from prior phases may need to be revised or updated. • The following activities are performed as part of the Requirements Analysis Phase.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Requirements_Analysis_Phase_3.4.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.4.3",
+        "section_title": "Activities",
+        "chunk_index": 2,
+        "chunk_count": 5,
+        "chunk_kind": "section_content",
+        "content_word_count": 92,
+        "schema_version": "4.0",
+        "phase": "Requirements Analysis Phase"
+      }
+    },
+    {
+      "id": "qna-3-4-3-03-86905b95310a7711",
+      "document": "HHS EPLC Framework\nSection 3.4.3: Activities\n\nThe results of these activities are captured in the Acquisition Strategy, which also requires additional items not covered by this list: • Develop Requirements Analysis • Analyze Analysis of Alternatives • Procure Government Human Resources and Services • Review and/or Refine Acquisition Strategy • Acquire Contractor Services if required • Prepare Solicitation of Services • Develop Technical Evaluation Report • Develop Source Selection Recommendation • Obtain Contract Award • Prepare Adjustment of Funds • Establish Contract Performance • The Acquisition Strategy should provide adequate information to enable the following actions: • Making management decisions concerning procurement of government human resources and services Memorandum of Understanding (MOU) and Service Level Agreement (SLAs) and contractor services procurement, including ensuring the availability of funding. • Performing a technical analysis and evaluation of vendor proposals. • Vendors’ bid preparation. • The Source Selection Official to base a selection.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Requirements_Analysis_Phase_3.4.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.4.3",
+        "section_title": "Activities",
+        "chunk_index": 3,
+        "chunk_count": 5,
+        "chunk_kind": "section_content",
+        "content_word_count": 144,
+        "schema_version": "4.0",
+        "phase": "Requirements Analysis Phase"
+      }
+    },
+    {
+      "id": "qna-3-4-3-04-4c9314d681811792",
+      "document": "HHS EPLC Framework\nSection 3.4.3: Activities\n\nThe Acquisition Strategy becomes critical after the Requirements Document has been approved. Several acquisitions may be needed to procure an entire system and are a continuous part of the life cycle. The Acquisition Strategy is continuously updated with the active involvement of the Investment Manager and Contracting Officer.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Requirements_Analysis_Phase_3.4.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.4.3",
+        "section_title": "Activities",
+        "chunk_index": 4,
+        "chunk_count": 5,
+        "chunk_kind": "section_content",
+        "content_word_count": 48,
+        "schema_version": "4.0",
+        "phase": "Requirements Analysis Phase"
+      }
+    },
+    {
+      "id": "qna-3-4-4-01-a67ba0b91099aa5e",
+      "document": "HHS EPLC Framework\nSection 3.4.4: Deliverables\n\nRequirements Document with components (Final): Functional & Non-Functional Requirements; Requirements Traceability Matrix (RTM); Business Process Model (BPM) Expansion; Logical Data Model. The Requirements Document describes both the project and product requirements. It outlines the technical, functional, performance and other requirements necessary to deliver the end business product.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Requirements_Analysis_Phase_3.4.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.4.4",
+        "section_title": "Deliverables",
+        "chunk_index": 1,
+        "chunk_count": 1,
+        "chunk_kind": "section_content",
+        "content_word_count": 47,
+        "schema_version": "4.0",
+        "phase": "Requirements Analysis Phase"
+      }
+    },
+    {
+      "id": "qna-3-4-5-00-508a8a1aba996458",
+      "document": "HHS EPLC Framework\nSection 3.4.5: Exit Criteria\n\nThis section covers: Objective; Phase Specific Exit Criteria; Generic Exit Criteria.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Requirements_Analysis_Phase_3.4.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.4.5",
+        "section_title": "Exit Criteria",
+        "chunk_index": 0,
+        "chunk_count": 4,
+        "chunk_kind": "section_overview",
+        "content_word_count": 11,
+        "schema_version": "4.0",
+        "phase": "Requirements Analysis Phase"
+      }
+    },
+    {
+      "id": "qna-3-4-5-01-e53ddfd0482f19fc",
+      "document": "HHS EPLC Framework\nSection 3.4.5: Exit Criteria\n\nObjective: To determine if the project requirements have been defined sufficiently to be translated into the Business Product.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Requirements_Analysis_Phase_3.4.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.4.5",
+        "section_title": "Exit Criteria",
+        "chunk_index": 1,
+        "chunk_count": 4,
+        "chunk_kind": "section_content",
+        "content_word_count": 18,
+        "schema_version": "4.0",
+        "phase": "Requirements Analysis Phase"
+      }
+    },
+    {
+      "id": "qna-3-4-5-02-0fe550b7cba114ac",
+      "document": "HHS EPLC Framework\nSection 3.4.5: Exit Criteria\n\nPhase Specific Exit Criteria: • The initial Test Plan is defined. • Requirements have been grouped and sufficiently detailed so that they can be tested once the product is developed. • Process and Data Models are defined adequately for product design.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Requirements_Analysis_Phase_3.4.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.4.5",
+        "section_title": "Exit Criteria",
+        "chunk_index": 2,
+        "chunk_count": 4,
+        "chunk_kind": "section_content",
+        "content_word_count": 41,
+        "schema_version": "4.0",
+        "phase": "Requirements Analysis Phase"
+      }
+    },
+    {
+      "id": "qna-3-4-5-03-9861dcd09e2521eb",
+      "document": "HHS EPLC Framework\nSection 3.4.5: Exit Criteria\n\nGeneric Exit Criteria: • Variances from baselines have been identified and mitigated. [Cost and schedule variances and scope changes are identified, significant variances are explained, and Corrective Action Plans (CAPs) or rebaseline requests are in place as appropriate.] • Project Baselines have been reviewed and revised as appropriate. [Should this project continue as-is, be modified, or be terminated based on current knowledge?] • The Project Management Plan and component plans have been reviewed and appropriately updated. [This includes Risk Management, Acquisition Strategy, Change Management, Configuration Management, System Categorization, Requirements Management, Communication Plan, WBS/Schedule, IV&V Planning, Quality Assurance, Records Management and Staffing Management Plan.]",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Requirements_Analysis_Phase_3.4.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.4.5",
+        "section_title": "Exit Criteria",
+        "chunk_index": 3,
+        "chunk_count": 4,
+        "chunk_kind": "section_content",
+        "content_word_count": 103,
+        "schema_version": "4.0",
+        "phase": "Requirements Analysis Phase"
+      }
+    },
+    {
+      "id": "qna-3-4-6-01-2ff9824a5726df09",
+      "document": "HHS EPLC Framework\nSection 3.4.6: Project Review\n\nThe Requirements Review is conducted to verify that the requirements are complete, accurate, consistent and problem-free; to evaluate the responsiveness of the requirements to the business requirements; to ensure that the requirements are a suitable basis for subsequent design activities; to ensure traceability within the requirements and between the design documents; and to affirm final agreement regarding the content of the Requirements Document. Upon successful completion of this review, the Requirements Document is baselined.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Requirements_Analysis_Phase_3.4.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.4.6",
+        "section_title": "Project Review",
+        "chunk_index": 1,
+        "chunk_count": 1,
+        "chunk_kind": "section_content",
+        "content_word_count": 74,
+        "schema_version": "4.0",
+        "phase": "Requirements Analysis Phase"
+      }
+    },
+    {
+      "id": "qna-3-4-7-01-1925292e418ab3a2",
+      "document": "HHS EPLC Framework\nSection 3.4.7: Stage Gate Review\n\nThe Requirements Analysis Stage Gate Review considers whether the project should proceed to the Design Phase.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Requirements_Analysis_Phase_3.4.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.4.7",
+        "section_title": "Stage Gate Review",
+        "chunk_index": 1,
+        "chunk_count": 1,
+        "chunk_kind": "section_content",
+        "content_word_count": 16,
+        "schema_version": "4.0",
+        "phase": "Requirements Analysis Phase"
+      }
+    },
+    {
+      "id": "qna-3-5-1-00-3298a85604f113c3",
+      "document": "HHS EPLC Framework\nSection 3.5.1: Description\n\nThis section covers: The Design Phase seeks to develop detailed specifications that emphasize the physical solution to the customer’s information technology...; A formal review of the high-level architectural design is conducted prior to detailed design of the Business Product...; For COTS products, some tasks and activities may have been performed by the vendor and vendor documentation may....",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Design_Phase_3.5_MERGED_FINAL_FIXED_1765597020.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.5.1",
+        "section_title": "Description",
+        "chunk_index": 0,
+        "chunk_count": 4,
+        "chunk_kind": "section_overview",
+        "content_word_count": 57,
+        "schema_version": "4.0",
+        "phase": "Design Phase"
+      }
+    },
+    {
+      "id": "qna-3-5-1-01-5458b43dc2171338",
+      "document": "HHS EPLC Framework\nSection 3.5.1: Description\n\nThe Design Phase seeks to develop detailed specifications that emphasize the physical solution to the customer’s information technology needs. The system requirements and logical description of the entities, relationships, and attributes of the data that were documented during the Requirements Analysis Phase are further refined and allocated into system and database design specifications that are organized in a way suitable for implementation within the constraints of a physical environment (e.g., computer, database, facilities).",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Design_Phase_3.5_MERGED_FINAL_FIXED_1765597020.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.5.1",
+        "section_title": "Description",
+        "chunk_index": 1,
+        "chunk_count": 4,
+        "chunk_kind": "section_content",
+        "content_word_count": 73,
+        "schema_version": "4.0",
+        "phase": "Design Phase"
+      }
+    },
+    {
+      "id": "qna-3-5-1-02-7a8e03aa8f8fd89f",
+      "document": "HHS EPLC Framework\nSection 3.5.1: Description\n\nA formal review of the high-level architectural design is conducted prior to detailed design of the Business Product to achieve confidence that the design satisfies the system requirements, is in conformance with the enterprise architecture and prescribed design standards, to raise and resolve any critical technical and/or project-related issues, and to identify and mitigate project, technical, security, and/or business risks affecting continued detailed design and subsequent life cycle activities. During the Design Phase, the initial strategy for any necessary training is also begun. Estimates of project expenses are updated to reflect actual costs and estimates for future phases. In addition, the work planned for future phases is redefined, if necessary, based on information acquired during the Design Phase.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Design_Phase_3.5_MERGED_FINAL_FIXED_1765597020.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.5.1",
+        "section_title": "Description",
+        "chunk_index": 2,
+        "chunk_count": 4,
+        "chunk_kind": "section_content",
+        "content_word_count": 118,
+        "schema_version": "4.0",
+        "phase": "Design Phase"
+      }
+    },
+    {
+      "id": "qna-3-5-1-03-6d6e22da1c1c116e",
+      "document": "HHS EPLC Framework\nSection 3.5.1: Description\n\nFor COTS products, some tasks and activities may have been performed by the vendor and vendor documentation may be appropriate to meet some documentation requirements. This is acceptable as long as each required activity is performed and each required deliverable is available.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Design_Phase_3.5_MERGED_FINAL_FIXED_1765597020.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.5.1",
+        "section_title": "Description",
+        "chunk_index": 3,
+        "chunk_count": 4,
+        "chunk_kind": "section_content",
+        "content_word_count": 42,
+        "schema_version": "4.0",
+        "phase": "Design Phase"
+      }
+    },
+    {
+      "id": "qna-3-5-2-00-129fb6bb696be1c8",
+      "document": "HHS EPLC Framework\nSection 3.5.2: Responsibilities\n\nThis section covers: Business Owner; Project Manager; Integrated Project Team; Contracting Officer; Critical Partners; Enterprise Architecture; Security; Acquisition; Budget; Finance; HR; Section 508; CPIC; Performance; Records Management; IT Governance Organization.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Design_Phase_3.5_MERGED_FINAL_FIXED_1765597020.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.5.2",
+        "section_title": "Responsibilities",
+        "chunk_index": 0,
+        "chunk_count": 17,
+        "chunk_kind": "section_overview",
+        "content_word_count": 30,
+        "schema_version": "4.0",
+        "phase": "Design Phase"
+      }
+    },
+    {
+      "id": "qna-3-5-2-01-b4fe3b8ec3425f19",
+      "document": "HHS EPLC Framework\nSection 3.5.2: Responsibilities\n\nBusiness Owner: The Business Owner may participate in the Preliminary Design Review.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Design_Phase_3.5_MERGED_FINAL_FIXED_1765597020.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.5.2",
+        "section_title": "Responsibilities",
+        "chunk_index": 1,
+        "chunk_count": 17,
+        "chunk_kind": "section_content",
+        "content_word_count": 12,
+        "schema_version": "4.0",
+        "phase": "Design Phase"
+      }
+    },
+    {
+      "id": "qna-3-5-2-02-07f97d208b3203a3",
+      "document": "HHS EPLC Framework\nSection 3.5.2: Responsibilities\n\nProject Manager: The Project Manager is responsible and accountable for the successful execution of the Design Phase. The Project Manager is responsible for leading the team that accomplishes the phase activities and deliverables.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Design_Phase_3.5_MERGED_FINAL_FIXED_1765597020.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.5.2",
+        "section_title": "Responsibilities",
+        "chunk_index": 2,
+        "chunk_count": 17,
+        "chunk_kind": "section_content",
+        "content_word_count": 33,
+        "schema_version": "4.0",
+        "phase": "Design Phase"
+      }
+    },
+    {
+      "id": "qna-3-5-2-03-8bcd23f959b3fbd5",
+      "document": "HHS EPLC Framework\nSection 3.5.2: Responsibilities\n\nIntegrated Project Team: The Integrated Project Team members (regardless of the organization of permanent assignment) are responsible for accomplishing assigned tasks as directed by the Project Manager.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Design_Phase_3.5_MERGED_FINAL_FIXED_1765597020.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.5.2",
+        "section_title": "Responsibilities",
+        "chunk_index": 3,
+        "chunk_count": 17,
+        "chunk_kind": "section_content",
+        "content_word_count": 27,
+        "schema_version": "4.0",
+        "phase": "Design Phase"
+      }
+    },
+    {
+      "id": "qna-3-5-2-04-d3f5193e77dd3053",
+      "document": "HHS EPLC Framework\nSection 3.5.2: Responsibilities\n\nContracting Officer: The Contracting Officer is responsible and accountable for preparing solicitation documents under the guidance of the Project Manager.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Design_Phase_3.5_MERGED_FINAL_FIXED_1765597020.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.5.2",
+        "section_title": "Responsibilities",
+        "chunk_index": 4,
+        "chunk_count": 17,
+        "chunk_kind": "section_content",
+        "content_word_count": 20,
+        "schema_version": "4.0",
+        "phase": "Design Phase"
+      }
+    },
+    {
+      "id": "qna-3-5-2-05-4589db55909600f7",
+      "document": "HHS EPLC Framework\nSection 3.5.2: Responsibilities\n\nCritical Partners: The Critical Partners participate in a Design Review to ensure compliance with policies in their respective areas and to make any necessary tradeoff decisions if conflicting goals have arisen during the Design.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Design_Phase_3.5_MERGED_FINAL_FIXED_1765597020.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.5.2",
+        "section_title": "Responsibilities",
+        "chunk_index": 5,
+        "chunk_count": 17,
+        "chunk_kind": "section_content",
+        "content_word_count": 34,
+        "schema_version": "4.0",
+        "phase": "Design Phase"
+      }
+    },
+    {
+      "id": "qna-3-5-2-06-74f81180ccacdb1a",
+      "document": "HHS EPLC Framework\nSection 3.5.2: Responsibilities\n\nEnterprise Architecture: Conduct a formal review of the high-level architectural design to achieve confidence that the design satisfies the system requirements, is in conformance with the Enterprise Architecture and prescribed design standards.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Design_Phase_3.5_MERGED_FINAL_FIXED_1765597020.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.5.2",
+        "section_title": "Responsibilities",
+        "chunk_index": 6,
+        "chunk_count": 17,
+        "chunk_kind": "section_content",
+        "content_word_count": 32,
+        "schema_version": "4.0",
+        "phase": "Design Phase"
+      }
+    },
+    {
+      "id": "qna-3-5-2-07-df4b3f404417604d",
+      "document": "HHS EPLC Framework\nSection 3.5.2: Responsibilities\n\nSecurity: Establish that Information security documents (Security Authorization, Privacy Impact Assessment, System of Record Notice, and Computer Match Agreement) are reviewed for completeness and accuracy and that Contingency/Disaster Recovery Plan includes complete procedures, arrangements and responsibilities. Verify that project information security risks are identified and mitigation plans are made and documented.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Design_Phase_3.5_MERGED_FINAL_FIXED_1765597020.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.5.2",
+        "section_title": "Responsibilities",
+        "chunk_index": 7,
+        "chunk_count": 17,
+        "chunk_kind": "section_content",
+        "content_word_count": 51,
+        "schema_version": "4.0",
+        "phase": "Design Phase"
+      }
+    },
+    {
+      "id": "qna-3-5-2-08-163c4b63bc6facc9",
+      "document": "HHS EPLC Framework\nSection 3.5.2: Responsibilities\n\nAcquisition: Verify that contracts are being fulfilled according to award or approved changes.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Design_Phase_3.5_MERGED_FINAL_FIXED_1765597020.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.5.2",
+        "section_title": "Responsibilities",
+        "chunk_index": 8,
+        "chunk_count": 17,
+        "chunk_kind": "section_content",
+        "content_word_count": 13,
+        "schema_version": "4.0",
+        "phase": "Design Phase"
+      }
+    },
+    {
+      "id": "qna-3-5-2-09-c1de3d5b53141054",
+      "document": "HHS EPLC Framework\nSection 3.5.2: Responsibilities\n\nBudget: Guarantee that the budget is sufficient to meet the needs of the project. Determine if project business risks are identified and mitigation plans are made.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Design_Phase_3.5_MERGED_FINAL_FIXED_1765597020.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.5.2",
+        "section_title": "Responsibilities",
+        "chunk_index": 9,
+        "chunk_count": 17,
+        "chunk_kind": "section_content",
+        "content_word_count": 26,
+        "schema_version": "4.0",
+        "phase": "Design Phase"
+      }
+    },
+    {
+      "id": "qna-3-5-2-10-b68b1ffac554bc9f",
+      "document": "HHS EPLC Framework\nSection 3.5.2: Responsibilities\n\nFinance: Guarantee that estimates of project expenses have been updated to reflect actual costs and estimates for future phases. Determine if project business risks are identified and mitigation plans are made.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Design_Phase_3.5_MERGED_FINAL_FIXED_1765597020.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.5.2",
+        "section_title": "Responsibilities",
+        "chunk_index": 10,
+        "chunk_count": 17,
+        "chunk_kind": "section_content",
+        "content_word_count": 31,
+        "schema_version": "4.0",
+        "phase": "Design Phase"
+      }
+    },
+    {
+      "id": "qna-3-5-2-11-7b385c5332c4c3a4",
+      "document": "HHS EPLC Framework\nSection 3.5.2: Responsibilities\n\nHR: Confirm that issues related to staffing, workforce, or other HR areas have been addressed.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Design_Phase_3.5_MERGED_FINAL_FIXED_1765597020.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.5.2",
+        "section_title": "Responsibilities",
+        "chunk_index": 11,
+        "chunk_count": 17,
+        "chunk_kind": "section_content",
+        "content_word_count": 15,
+        "schema_version": "4.0",
+        "phase": "Design Phase"
+      }
+    },
+    {
+      "id": "qna-3-5-2-12-22d0b74b1179087a",
+      "document": "HHS EPLC Framework\nSection 3.5.2: Responsibilities\n\nSection 508: Establish that any new or further requirements that have been discovered that are necessary to accommodate individuals with disabilities have been added to the Requirements Document and the Design documents. Confirm that there are test cases which incorporate Section 508 standards.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Design_Phase_3.5_MERGED_FINAL_FIXED_1765597020.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.5.2",
+        "section_title": "Responsibilities",
+        "chunk_index": 12,
+        "chunk_count": 17,
+        "chunk_kind": "section_content",
+        "content_word_count": 43,
+        "schema_version": "4.0",
+        "phase": "Design Phase"
+      }
+    },
+    {
+      "id": "qna-3-5-2-13-84cbd6b1f6c420a0",
+      "document": "HHS EPLC Framework\nSection 3.5.2: Responsibilities\n\nCPIC: Make sure that the Design is fully documented.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Design_Phase_3.5_MERGED_FINAL_FIXED_1765597020.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.5.2",
+        "section_title": "Responsibilities",
+        "chunk_index": 13,
+        "chunk_count": 17,
+        "chunk_kind": "section_content",
+        "content_word_count": 9,
+        "schema_version": "4.0",
+        "phase": "Design Phase"
+      }
+    },
+    {
+      "id": "qna-3-5-2-14-6d12c16636ddc002",
+      "document": "HHS EPLC Framework\nSection 3.5.2: Responsibilities\n\nPerformance: Determine if project technical risks are identified and mitigation plans are made. Verify that performance goals are agreed upon.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Design_Phase_3.5_MERGED_FINAL_FIXED_1765597020.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.5.2",
+        "section_title": "Responsibilities",
+        "chunk_index": 14,
+        "chunk_count": 17,
+        "chunk_kind": "section_content",
+        "content_word_count": 20,
+        "schema_version": "4.0",
+        "phase": "Design Phase"
+      }
+    },
+    {
+      "id": "qna-3-5-2-15-f2259f6a41f77f73",
+      "document": "HHS EPLC Framework\nSection 3.5.2: Responsibilities\n\nRecords Management: Confirm that requirements related to records management have been included in the design as appropriate.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Design_Phase_3.5_MERGED_FINAL_FIXED_1765597020.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.5.2",
+        "section_title": "Responsibilities",
+        "chunk_index": 15,
+        "chunk_count": 17,
+        "chunk_kind": "section_content",
+        "content_word_count": 17,
+        "schema_version": "4.0",
+        "phase": "Design Phase"
+      }
+    },
+    {
+      "id": "qna-3-5-2-16-55109eae8f112745",
+      "document": "HHS EPLC Framework\nSection 3.5.2: Responsibilities\n\nIT Governance Organization: The IT Governance organization conducts the Preliminary Design Review to achieve agreement and confidence that the design satisfies the functional and non-functional requirements and is in conformance with the enterprise architecture.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Design_Phase_3.5_MERGED_FINAL_FIXED_1765597020.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.5.2",
+        "section_title": "Responsibilities",
+        "chunk_index": 16,
+        "chunk_count": 17,
+        "chunk_kind": "section_content",
+        "content_word_count": 34,
+        "schema_version": "4.0",
+        "phase": "Design Phase"
+      }
+    },
+    {
+      "id": "qna-3-5-3-00-214bac4ba1d3dc74",
+      "document": "HHS EPLC Framework\nSection 3.5.3: Activities\n\nThis section covers: The following tasks are performed during the Design Phase.; The Design Document is developed by the Project Manager and Integrated Project Team, identifying the steps used in...; In the system design, first the general system characteristics are defined.; Based on the Privacy Impact Assessment, developed during the Planning Phase, a System of Record Notice (SORN) is...; A Contingency/Disaster Recovery Plan is developed containing emergency response procedures; backup arrangements, procedures and responsibilities; and post-disaster recovery...; The end user community is included in Design Phase actions as needed..",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Design_Phase_3.5_MERGED_FINAL_FIXED_1765597020.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.5.3",
+        "section_title": "Activities",
+        "chunk_index": 0,
+        "chunk_count": 7,
+        "chunk_kind": "section_overview",
+        "content_word_count": 89,
+        "schema_version": "4.0",
+        "phase": "Design Phase"
+      }
+    },
+    {
+      "id": "qna-3-5-3-01-829a3821dbbe6865",
+      "document": "HHS EPLC Framework\nSection 3.5.3: Activities\n\nThe following tasks are performed during the Design Phase.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Design_Phase_3.5_MERGED_FINAL_FIXED_1765597020.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.5.3",
+        "section_title": "Activities",
+        "chunk_index": 1,
+        "chunk_count": 7,
+        "chunk_kind": "section_content",
+        "content_word_count": 9,
+        "schema_version": "4.0",
+        "phase": "Design Phase"
+      }
+    },
+    {
+      "id": "qna-3-5-3-02-7e7d2d6fb3445b5b",
+      "document": "HHS EPLC Framework\nSection 3.5.3: Activities\n\nThe Design Document is developed by the Project Manager and Integrated Project Team, identifying the steps used in the design of the Business Product. The prerequisites for this phase are the Business Case, Project Management Plan, and Requirements Document. The Project Manager and Integrated Project Team identify/specify the desired environments (design, development, test, and operations). The business organization, roles and procedures for designing this system/application are articulated. The Design Document is a deliverable of the Design Phase. Documents from the previous phases are revised as necessary during the Design Phase.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Design_Phase_3.5_MERGED_FINAL_FIXED_1765597020.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.5.3",
+        "section_title": "Activities",
+        "chunk_index": 2,
+        "chunk_count": 7,
+        "chunk_kind": "section_content",
+        "content_word_count": 90,
+        "schema_version": "4.0",
+        "phase": "Design Phase"
+      }
+    },
+    {
+      "id": "qna-3-5-3-03-9150f9963e3f8fa7",
+      "document": "HHS EPLC Framework\nSection 3.5.3: Activities\n\nIn the system design, first the general system characteristics are defined. The data storage and access for the database layer are designed. The user interface at the desktop layer is designed. The business rules layer or the application logic is designed. The interfaces from application to application and application to database also are designed and documented.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Design_Phase_3.5_MERGED_FINAL_FIXED_1765597020.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.5.3",
+        "section_title": "Activities",
+        "chunk_index": 3,
+        "chunk_count": 7,
+        "chunk_kind": "section_content",
+        "content_word_count": 56,
+        "schema_version": "4.0",
+        "phase": "Design Phase"
+      }
+    },
+    {
+      "id": "qna-3-5-3-04-fc901da7501c414c",
+      "document": "HHS EPLC Framework\nSection 3.5.3: Activities\n\nBased on the Privacy Impact Assessment, developed during the Planning Phase, a System of Record Notice (SORN) is prepared, if required, to inform the public of any information collection by the Business Product about citizens. A Computer Match Agreement (CMA) is also prepared, if needed, to establish the conditions, safeguards, and procedures under which HHS agrees to disclose data where there is a computerized comparison of two or more automated System of Records (SORs).",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Design_Phase_3.5_MERGED_FINAL_FIXED_1765597020.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.5.3",
+        "section_title": "Activities",
+        "chunk_index": 4,
+        "chunk_count": 7,
+        "chunk_kind": "section_content",
+        "content_word_count": 74,
+        "schema_version": "4.0",
+        "phase": "Design Phase"
+      }
+    },
+    {
+      "id": "qna-3-5-3-05-269942e67a1f97d2",
+      "document": "HHS EPLC Framework\nSection 3.5.3: Activities\n\nA Contingency/Disaster Recovery Plan is developed containing emergency response procedures; backup arrangements, procedures and responsibilities; and post-disaster recovery procedures and responsibilities. It is included in this phase because many of these factors will affect the design of the system. During the Design Phase, a final draft Test Plan is also prepared. The Test Plan describes the test cases and test environment specifications, and includes a Requirements Traceability Matrix that maps requirements to the specific tests to be conducted in the Test Phase. This final draft Test Plan will be used in the Development Phase to test components as they are built and integrated.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Design_Phase_3.5_MERGED_FINAL_FIXED_1765597020.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.5.3",
+        "section_title": "Activities",
+        "chunk_index": 5,
+        "chunk_count": 7,
+        "chunk_kind": "section_content",
+        "content_word_count": 103,
+        "schema_version": "4.0",
+        "phase": "Design Phase"
+      }
+    },
+    {
+      "id": "qna-3-5-3-06-6b9908e32ee4236c",
+      "document": "HHS EPLC Framework\nSection 3.5.3: Activities\n\nThe end user community is included in Design Phase actions as needed. New or further requirements might be discovered that are necessary to accommodate individuals with disabilities. If so, these requirements are added to the Requirements Document and the design documents.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Design_Phase_3.5_MERGED_FINAL_FIXED_1765597020.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.5.3",
+        "section_title": "Activities",
+        "chunk_index": 6,
+        "chunk_count": 7,
+        "chunk_kind": "section_content",
+        "content_word_count": 41,
+        "schema_version": "4.0",
+        "phase": "Design Phase"
+      }
+    },
+    {
+      "id": "qna-3-5-4-00-ac457a815f127794",
+      "document": "HHS EPLC Framework\nSection 3.5.4: Deliverables\n\nThis section covers: Design Document with components (Architectural & detailed elements) (Final); Computer Match Agreement (CMA) (Final); Test Plan (Final Draft); Contingency/Disaster Recovery Plan (Final Draft); System of Record Notice (SORN) (Final Draft).",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Design_Phase_3.5_MERGED_FINAL_FIXED_1765597020.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.5.4",
+        "section_title": "Deliverables",
+        "chunk_index": 0,
+        "chunk_count": 6,
+        "chunk_kind": "section_overview",
+        "content_word_count": 33,
+        "schema_version": "4.0",
+        "phase": "Design Phase"
+      }
+    },
+    {
+      "id": "qna-3-5-4-01-c4a62767c4f15868",
+      "document": "HHS EPLC Framework\nSection 3.5.4: Deliverables\n\nDesign Document with components (Architectural & detailed elements) (Final): Physical Data Model (database design); Release Strategy; Data Conversion; Interface Control; Section 508 Compliance; Capacity / Implementation Planning; Updated RTM. The Design Document describes the technical solution that satisfies the requirements for the Business Product (e.g., system). Either directly or by reference to other documents, the Design Document provides a high-level overview of the entire solution architecture and data design, including external interfaces, as well as lower-level detailed design specifications for internal components of the Business Product that are to be developed.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Design_Phase_3.5_MERGED_FINAL_FIXED_1765597020.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.5.4",
+        "section_title": "Deliverables",
+        "chunk_index": 1,
+        "chunk_count": 6,
+        "chunk_kind": "section_content",
+        "content_word_count": 91,
+        "schema_version": "4.0",
+        "phase": "Design Phase"
+      }
+    },
+    {
+      "id": "qna-3-5-4-02-9ae8111f6440c0be",
+      "document": "HHS EPLC Framework\nSection 3.5.4: Deliverables\n\nComputer Match Agreement (CMA) (Final): A Computer Match Agreement CMA is a written accord that establishes the conditions, safeguards, and procedures under which a Federal organization agrees to disclose data where there is a computerized comparison of two or more automated System of Records (SORs). In conjunction with a CMA, an Inter/Intra-agency Agreement (IA) is also prepared when the SOR(s) involved in the comparison are the responsibility of another Federal agency. An Interconnection Security Agreement (ISA) may also be prepared.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Design_Phase_3.5_MERGED_FINAL_FIXED_1765597020.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.5.4",
+        "section_title": "Deliverables",
+        "chunk_index": 2,
+        "chunk_count": 6,
+        "chunk_kind": "section_content",
+        "content_word_count": 80,
+        "schema_version": "4.0",
+        "phase": "Design Phase"
+      }
+    },
+    {
+      "id": "qna-3-5-4-03-ec62f8306acca31a",
+      "document": "HHS EPLC Framework\nSection 3.5.4: Deliverables\n\nTest Plan (Final Draft): The Test Plan defines the types of tests (e.g. unit, function, integration, system, information security, performance (load and stress), regression, user acceptance, and/or independent verification and validation) to be carried out. The document describes the acceptance criteria, roles and responsibilities, traceability matrix, resources required, and other elements relevant to test planning and execution.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Design_Phase_3.5_MERGED_FINAL_FIXED_1765597020.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.5.4",
+        "section_title": "Deliverables",
+        "chunk_index": 3,
+        "chunk_count": 6,
+        "chunk_kind": "section_content",
+        "content_word_count": 57,
+        "schema_version": "4.0",
+        "phase": "Design Phase"
+      }
+    },
+    {
+      "id": "qna-3-5-4-04-73ce9d711fe41304",
+      "document": "HHS EPLC Framework\nSection 3.5.4: Deliverables\n\nContingency/Disaster Recovery Plan (Final Draft): The Contingency/Disaster Recovery Plan describes the strategy and organized course of action that is to be taken if things don’t go as planned or if there is a loss of use of the established business product (e.g., system) due to a disaster such as a flood, fire, computer virus, or major failure. The plan describes the strategy for ensuring recovery of the business product in accordance with stated recovery time and recovery point objectives.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Design_Phase_3.5_MERGED_FINAL_FIXED_1765597020.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.5.4",
+        "section_title": "Deliverables",
+        "chunk_index": 4,
+        "chunk_count": 6,
+        "chunk_kind": "section_content",
+        "content_word_count": 79,
+        "schema_version": "4.0",
+        "phase": "Design Phase"
+      }
+    },
+    {
+      "id": "qna-3-5-4-05-989fe199512bd918",
+      "document": "HHS EPLC Framework\nSection 3.5.4: Deliverables\n\nSystem of Record Notice (SORN) (Final Draft): The Privacy Act defines a System of Record (SOR) and requires the Federal government to inform the public of any collection of information about its citizens from which data are retrieved by a unique identifier. The SORN fulfills this requirement through publication in the Federal Register.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Design_Phase_3.5_MERGED_FINAL_FIXED_1765597020.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.5.4",
+        "section_title": "Deliverables",
+        "chunk_index": 5,
+        "chunk_count": 6,
+        "chunk_kind": "section_content",
+        "content_word_count": 53,
+        "schema_version": "4.0",
+        "phase": "Design Phase"
+      }
+    },
+    {
+      "id": "qna-3-5-5-00-0ebe526bf05e1fe1",
+      "document": "HHS EPLC Framework\nSection 3.5.5: Exit Criteria\n\nThis section covers: Objective; Phase Specific Exit Criteria; Generic Exit Criteria.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Design_Phase_3.5_MERGED_FINAL_FIXED_1765597020.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.5.5",
+        "section_title": "Exit Criteria",
+        "chunk_index": 0,
+        "chunk_count": 4,
+        "chunk_kind": "section_overview",
+        "content_word_count": 11,
+        "schema_version": "4.0",
+        "phase": "Design Phase"
+      }
+    },
+    {
+      "id": "qna-3-5-5-01-d299eeb9ad0527aa",
+      "document": "HHS EPLC Framework\nSection 3.5.5: Exit Criteria\n\nObjective: To determine if the design process will create a Business Product that meets the requirements within a specified project budget and schedule.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Design_Phase_3.5_MERGED_FINAL_FIXED_1765597020.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.5.5",
+        "section_title": "Exit Criteria",
+        "chunk_index": 1,
+        "chunk_count": 4,
+        "chunk_kind": "section_content",
+        "content_word_count": 23,
+        "schema_version": "4.0",
+        "phase": "Design Phase"
+      }
+    },
+    {
+      "id": "qna-3-5-5-02-4be0e2e8818b59a4",
+      "document": "HHS EPLC Framework\nSection 3.5.5: Exit Criteria\n\nPhase Specific Exit Criteria: No significant outstanding concerns among stakeholders regarding design adequacy or feasibility. Design is adequately documented to allow effective and efficient development. Contingency/Disaster Recovery plans are adequately documented to provide clear procedures and responsibilities. Security Documents are as complete and accurate as possible.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Design_Phase_3.5_MERGED_FINAL_FIXED_1765597020.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.5.5",
+        "section_title": "Exit Criteria",
+        "chunk_index": 2,
+        "chunk_count": 4,
+        "chunk_kind": "section_content",
+        "content_word_count": 46,
+        "schema_version": "4.0",
+        "phase": "Design Phase"
+      }
+    },
+    {
+      "id": "qna-3-5-5-03-37491924a82a5c73",
+      "document": "HHS EPLC Framework\nSection 3.5.5: Exit Criteria\n\nGeneric Exit Criteria: Variances from baselines have been identified and mitigated. Project Baselines have been reviewed and revised as appropriate. The Project Management Plan and component plans have been reviewed and appropriately updated.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Design_Phase_3.5_MERGED_FINAL_FIXED_1765597020.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.5.5",
+        "section_title": "Exit Criteria",
+        "chunk_index": 3,
+        "chunk_count": 4,
+        "chunk_kind": "section_content",
+        "content_word_count": 33,
+        "schema_version": "4.0",
+        "phase": "Design Phase"
+      }
+    },
+    {
+      "id": "qna-3-5-6-00-a238912706a70ede",
+      "document": "HHS EPLC Framework\nSection 3.5.6: Project Review\n\nThis section covers: The Detailed Design Review (DDR) is conducted subsequent to a PDR to achieve confidence that the individual design...; The DDR should identify and resolve open issues regarding system-wide design decisions, architectural design of the Business Product....",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Design_Phase_3.5_MERGED_FINAL_FIXED_1765597020.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.5.6",
+        "section_title": "Project Review",
+        "chunk_index": 0,
+        "chunk_count": 3,
+        "chunk_kind": "section_overview",
+        "content_word_count": 39,
+        "schema_version": "4.0",
+        "phase": "Design Phase"
+      }
+    },
+    {
+      "id": "qna-3-5-6-01-bdbdeeb474db4d33",
+      "document": "HHS EPLC Framework\nSection 3.5.6: Project Review\n\nThe Detailed Design Review (DDR) is conducted subsequent to a PDR to achieve confidence that the individual design components of an automated system/application and their interfaces have been completely defined and documented in sufficient detail such that the design of the Business Product is complete, fully integrated, and ready to move to the Development Phase. Upon successful completion of this review, the Design Document and other adjunct documents are baselined.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Design_Phase_3.5_MERGED_FINAL_FIXED_1765597020.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.5.6",
+        "section_title": "Project Review",
+        "chunk_index": 1,
+        "chunk_count": 3,
+        "chunk_kind": "section_content",
+        "content_word_count": 70,
+        "schema_version": "4.0",
+        "phase": "Design Phase"
+      }
+    },
+    {
+      "id": "qna-3-5-6-02-04d75bda4f54a3ab",
+      "document": "HHS EPLC Framework\nSection 3.5.6: Project Review\n\nThe DDR should identify and resolve open issues regarding system-wide design decisions, architectural design of the Business Product system or subsystem, Business Product design decisions, architectural design of a Business Product item, and the detailed design of a Business Product item or portion thereof.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Design_Phase_3.5_MERGED_FINAL_FIXED_1765597020.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.5.6",
+        "section_title": "Project Review",
+        "chunk_index": 2,
+        "chunk_count": 3,
+        "chunk_kind": "section_content",
+        "content_word_count": 44,
+        "schema_version": "4.0",
+        "phase": "Design Phase"
+      }
+    },
+    {
+      "id": "qna-3-5-7-01-6ed3d43c4b35b862",
+      "document": "HHS EPLC Framework\nSection 3.5.7: Stage Gate Review\n\nThe Preliminary Design Review (PDR) is a formal inspection of the high-level architectural design of an automated system, its software and external interfaces, conducted to achieve agreement and confidence that the design satisfies the functional and non-functional requirements and is in conformance with the enterprise architecture. Overall project status, proposed technical solutions, evolving software products, associated documentation, and capacity estimates are reviewed to determine completeness and consistency with design standards, to raise and resolve any technical and/or project-related issues, and to identify and mitigate project, technical, information security, and/or business risks affecting continued detailed design and subsequent development, testing, implementation, and operations & maintenance activities. This review is one of the four Stage Gate Reviews that cannot be delegated by the IT Governance organization.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Design_Phase_3.5_MERGED_FINAL_FIXED_1765597020.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.5.7",
+        "section_title": "Stage Gate Review",
+        "chunk_index": 1,
+        "chunk_count": 1,
+        "chunk_kind": "section_content",
+        "content_word_count": 124,
+        "schema_version": "4.0",
+        "phase": "Design Phase"
+      }
+    },
+    {
+      "id": "qna-3-6-1-01-39ae2d00e215f286",
+      "document": "HHS EPLC Framework\nSection 3.6.1: Description\n\nDuring the Development Phase, the system developer takes the detailed design information documented in the previous phase and transforms it into machine-executable form, and ensures that all of the individual components of the Business Product function correctly and interface properly with other components within the system/application. As necessary and appropriate, system hardware, networking and telecommunications equipment, and COTS/GOTS software is acquired and configured. New custom-software programs are developed, database(s) are built, and software components (COTS, GOTS, and custom-developed software and databases) are integrated. Test data and test case specifications are finalized. Unit and integration testing is performed by the developer with test results appropriately documented. Data conversion and training plans are finalized and user procedures are baselined, while operations, office and maintenance procedures are also initially developed. The Development Phase ends with a Stage Gate Review to determine readiness to proceed to the Test Phase.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Development_Phase_3.6_MERGED_FINAL_1765598996.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.6.1",
+        "section_title": "Description",
+        "chunk_index": 1,
+        "chunk_count": 1,
+        "chunk_kind": "section_content",
+        "content_word_count": 145,
+        "schema_version": "4.0",
+        "phase": "Development Phase"
+      }
+    },
+    {
+      "id": "qna-3-6-2-00-8a263fe85da547f3",
+      "document": "HHS EPLC Framework\nSection 3.6.2: Responsibilities\n\nThis section covers: Project Manager; Integrated Project Team; Development Team; Critical Partners; Enterprise Architecture; Security; Acquisition; Budget; Finance; HR; Section 508; CPIC; Performance; Records Management.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Development_Phase_3.6_MERGED_FINAL_1765598996.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.6.2",
+        "section_title": "Responsibilities",
+        "chunk_index": 0,
+        "chunk_count": 15,
+        "chunk_kind": "section_overview",
+        "content_word_count": 25,
+        "schema_version": "4.0",
+        "phase": "Development Phase"
+      }
+    },
+    {
+      "id": "qna-3-6-2-01-418da2bc2b615871",
+      "document": "HHS EPLC Framework\nSection 3.6.2: Responsibilities\n\nProject Manager: The Project Manager is responsible and accountable for the successful execution of the Development Phase. The Project Manager is responsible for leading the Integrated Project Team that accomplishes the Development Phase activities and deliverables.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Development_Phase_3.6_MERGED_FINAL_1765598996.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.6.2",
+        "section_title": "Responsibilities",
+        "chunk_index": 1,
+        "chunk_count": 15,
+        "chunk_kind": "section_content",
+        "content_word_count": 36,
+        "schema_version": "4.0",
+        "phase": "Development Phase"
+      }
+    },
+    {
+      "id": "qna-3-6-2-02-553767cc7e136d02",
+      "document": "HHS EPLC Framework\nSection 3.6.2: Responsibilities\n\nIntegrated Project Team: The Integrated Project Team members (regardless of the organization of permanent assignment) are responsible for accomplishing assigned tasks as directed by the Project Manager.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Development_Phase_3.6_MERGED_FINAL_1765598996.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.6.2",
+        "section_title": "Responsibilities",
+        "chunk_index": 2,
+        "chunk_count": 15,
+        "chunk_kind": "section_content",
+        "content_word_count": 27,
+        "schema_version": "4.0",
+        "phase": "Development Phase"
+      }
+    },
+    {
+      "id": "qna-3-6-2-03-556a7ad4ec64bc79",
+      "document": "HHS EPLC Framework\nSection 3.6.2: Responsibilities\n\nDevelopment Team: Technical personnel that execute projects are expected to follow the EPLC framework and be integral partners in the HHS project management process.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Development_Phase_3.6_MERGED_FINAL_1765598996.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.6.2",
+        "section_title": "Responsibilities",
+        "chunk_index": 3,
+        "chunk_count": 15,
+        "chunk_kind": "section_content",
+        "content_word_count": 24,
+        "schema_version": "4.0",
+        "phase": "Development Phase"
+      }
+    },
+    {
+      "id": "qna-3-6-2-04-e5562f6bd362417a",
+      "document": "HHS EPLC Framework\nSection 3.6.2: Responsibilities\n\nCritical Partners: The Critical Partners provide oversight, advice and counsel to the Project Manager on the conduct and requirements of the Development Phase.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Development_Phase_3.6_MERGED_FINAL_1765598996.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.6.2",
+        "section_title": "Responsibilities",
+        "chunk_index": 4,
+        "chunk_count": 15,
+        "chunk_kind": "section_content",
+        "content_word_count": 23,
+        "schema_version": "4.0",
+        "phase": "Development Phase"
+      }
+    },
+    {
+      "id": "qna-3-6-2-05-79c54112af76e99f",
+      "document": "HHS EPLC Framework\nSection 3.6.2: Responsibilities\n\nEnterprise Architecture: Determine if approved change requests are compliant with the Enterprise Architecture Technical Reference Model and do not negatively impact any dependencies on other systems.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Development_Phase_3.6_MERGED_FINAL_1765598996.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.6.2",
+        "section_title": "Responsibilities",
+        "chunk_index": 5,
+        "chunk_count": 15,
+        "chunk_kind": "section_content",
+        "content_word_count": 26,
+        "schema_version": "4.0",
+        "phase": "Development Phase"
+      }
+    },
+    {
+      "id": "qna-3-6-2-06-e85864156820c910",
+      "document": "HHS EPLC Framework\nSection 3.6.2: Responsibilities\n\nSecurity: Make sure that all development plans address safety, information security, and privacy concerns. Validate that the test plan includes explicit testing of information security controls and functional capabilities. Confirm that the Systems Security Plan and the Security Risk Assessment address all required topics and that an IV&V Assessment has been conducted.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Development_Phase_3.6_MERGED_FINAL_1765598996.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.6.2",
+        "section_title": "Responsibilities",
+        "chunk_index": 6,
+        "chunk_count": 15,
+        "chunk_kind": "section_content",
+        "content_word_count": 52,
+        "schema_version": "4.0",
+        "phase": "Development Phase"
+      }
+    },
+    {
+      "id": "qna-3-6-2-07-f1ae414b09fedafc",
+      "document": "HHS EPLC Framework\nSection 3.6.2: Responsibilities\n\nAcquisition: Conclude that contracts are being fulfilled according to award or approved changes and required assets (e.g., system hardware, COTS/GOTS software) have been acquired according to regulations.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Development_Phase_3.6_MERGED_FINAL_1765598996.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.6.2",
+        "section_title": "Responsibilities",
+        "chunk_index": 7,
+        "chunk_count": 15,
+        "chunk_kind": "section_content",
+        "content_word_count": 27,
+        "schema_version": "4.0",
+        "phase": "Development Phase"
+      }
+    },
+    {
+      "id": "qna-3-6-2-08-993c5a57df920815",
+      "document": "HHS EPLC Framework\nSection 3.6.2: Responsibilities\n\nBudget: Verify that the budget is sufficient to meet the needs of the project and project business risks are identified and mitigation plans are made.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Development_Phase_3.6_MERGED_FINAL_1765598996.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.6.2",
+        "section_title": "Responsibilities",
+        "chunk_index": 8,
+        "chunk_count": 15,
+        "chunk_kind": "section_content",
+        "content_word_count": 25,
+        "schema_version": "4.0",
+        "phase": "Development Phase"
+      }
+    },
+    {
+      "id": "qna-3-6-2-09-4d732b68eb96a227",
+      "document": "HHS EPLC Framework\nSection 3.6.2: Responsibilities\n\nFinance: Verify that actual expenses are in accordance with the budget plan.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Development_Phase_3.6_MERGED_FINAL_1765598996.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.6.2",
+        "section_title": "Responsibilities",
+        "chunk_index": 9,
+        "chunk_count": 15,
+        "chunk_kind": "section_content",
+        "content_word_count": 12,
+        "schema_version": "4.0",
+        "phase": "Development Phase"
+      }
+    },
+    {
+      "id": "qna-3-6-2-10-ed66479e43c3c0d5",
+      "document": "HHS EPLC Framework\nSection 3.6.2: Responsibilities\n\nHR: Ensure that issues related to staffing, workforce, or other HR areas have been addressed.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Development_Phase_3.6_MERGED_FINAL_1765598996.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.6.2",
+        "section_title": "Responsibilities",
+        "chunk_index": 10,
+        "chunk_count": 15,
+        "chunk_kind": "section_content",
+        "content_word_count": 15,
+        "schema_version": "4.0",
+        "phase": "Development Phase"
+      }
+    },
+    {
+      "id": "qna-3-6-2-11-9229085944eba16c",
+      "document": "HHS EPLC Framework\nSection 3.6.2: Responsibilities\n\nSection 508: Establish that requirements identified for Section 508 compliance are incorporated into the system.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Development_Phase_3.6_MERGED_FINAL_1765598996.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.6.2",
+        "section_title": "Responsibilities",
+        "chunk_index": 11,
+        "chunk_count": 15,
+        "chunk_kind": "section_content",
+        "content_word_count": 15,
+        "schema_version": "4.0",
+        "phase": "Development Phase"
+      }
+    },
+    {
+      "id": "qna-3-6-2-12-fd2908eb2443a1b1",
+      "document": "HHS EPLC Framework\nSection 3.6.2: Responsibilities\n\nCPIC: Ensure that cost and scheduling are being reported accurately and is within acceptable limits or CAP is in place for remediation.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Development_Phase_3.6_MERGED_FINAL_1765598996.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.6.2",
+        "section_title": "Responsibilities",
+        "chunk_index": 12,
+        "chunk_count": 15,
+        "chunk_kind": "section_content",
+        "content_word_count": 22,
+        "schema_version": "4.0",
+        "phase": "Development Phase"
+      }
+    },
+    {
+      "id": "qna-3-6-2-13-03fd6384ed904b82",
+      "document": "HHS EPLC Framework\nSection 3.6.2: Responsibilities\n\nPerformance: Make sure the Business Product covering the requirements is ready for integration and formal testing. Confirm that Test Plans are complete.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Development_Phase_3.6_MERGED_FINAL_1765598996.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.6.2",
+        "section_title": "Responsibilities",
+        "chunk_index": 13,
+        "chunk_count": 15,
+        "chunk_kind": "section_content",
+        "content_word_count": 22,
+        "schema_version": "4.0",
+        "phase": "Development Phase"
+      }
+    },
+    {
+      "id": "qna-3-6-2-14-12e7b9f69af8858a",
+      "document": "HHS EPLC Framework\nSection 3.6.2: Responsibilities\n\nRecords Management: Verify that requirements identified for records management compliance are incorporated into the system.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Development_Phase_3.6_MERGED_FINAL_1765598996.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.6.2",
+        "section_title": "Responsibilities",
+        "chunk_index": 14,
+        "chunk_count": 15,
+        "chunk_kind": "section_content",
+        "content_word_count": 15,
+        "schema_version": "4.0",
+        "phase": "Development Phase"
+      }
+    },
+    {
+      "id": "qna-3-6-3-00-12f6d44ee48567c8",
+      "document": "HHS EPLC Framework\nSection 3.6.3: Activities\n\nThis section covers: The Development Phase includes several activities that are the responsibility of the developer.; The developer selects, tailors, and uses those standards, methods, tools, and computer programming languages that are documented, appropriate,...; Plans for conducting the activities of the Development Phase are developed, documented and executed.; Verify that the Business Product covering the documented and baselined requirements is in a sufficient state of readiness...; During the Development Phase, the final Test Plan is prepared..",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Development_Phase_3.6_MERGED_FINAL_1765598996.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.6.3",
+        "section_title": "Activities",
+        "chunk_index": 0,
+        "chunk_count": 6,
+        "chunk_kind": "section_overview",
+        "content_word_count": 76,
+        "schema_version": "4.0",
+        "phase": "Development Phase"
+      }
+    },
+    {
+      "id": "qna-3-6-3-01-60d0bfb2161212bf",
+      "document": "HHS EPLC Framework\nSection 3.6.3: Activities\n\nThe Development Phase includes several activities that are the responsibility of the developer. The developer places the outputs under configuration control and performs change control. The developer also documents and resolves problems and non-conformances found in the Business Product and tasks.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Development_Phase_3.6_MERGED_FINAL_1765598996.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.6.3",
+        "section_title": "Activities",
+        "chunk_index": 1,
+        "chunk_count": 6,
+        "chunk_kind": "section_content",
+        "content_word_count": 41,
+        "schema_version": "4.0",
+        "phase": "Development Phase"
+      }
+    },
+    {
+      "id": "qna-3-6-3-02-1f8f6e6a5dd29764",
+      "document": "HHS EPLC Framework\nSection 3.6.3: Activities\n\nThe developer selects, tailors, and uses those standards, methods, tools, and computer programming languages that are documented, appropriate, and established by the organization for performing the activities in the Development Phase.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Development_Phase_3.6_MERGED_FINAL_1765598996.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.6.3",
+        "section_title": "Activities",
+        "chunk_index": 2,
+        "chunk_count": 6,
+        "chunk_kind": "section_content",
+        "content_word_count": 31,
+        "schema_version": "4.0",
+        "phase": "Development Phase"
+      }
+    },
+    {
+      "id": "qna-3-6-3-03-6937a5fe21334166",
+      "document": "HHS EPLC Framework\nSection 3.6.3: Activities\n\nPlans for conducting the activities of the Development Phase are developed, documented and executed. The plans include specific standards, methods, tools, actions, and responsibility associated with the development and qualification of all requirements including safety and information security. Separate plans may be developed.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Development_Phase_3.6_MERGED_FINAL_1765598996.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.6.3",
+        "section_title": "Activities",
+        "chunk_index": 3,
+        "chunk_count": 6,
+        "chunk_kind": "section_content",
+        "content_word_count": 43,
+        "schema_version": "4.0",
+        "phase": "Development Phase"
+      }
+    },
+    {
+      "id": "qna-3-6-3-04-59d69d46652d13a0",
+      "document": "HHS EPLC Framework\nSection 3.6.3: Activities\n\nVerify that the Business Product covering the documented and baselined requirements is in a sufficient state of readiness for integration and formal testing by an assigned test group (i.e. other than development personnel).",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Development_Phase_3.6_MERGED_FINAL_1765598996.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.6.3",
+        "section_title": "Activities",
+        "chunk_index": 4,
+        "chunk_count": 6,
+        "chunk_kind": "section_content",
+        "content_word_count": 33,
+        "schema_version": "4.0",
+        "phase": "Development Phase"
+      }
+    },
+    {
+      "id": "qna-3-6-3-05-81430efc1d48aaaa",
+      "document": "HHS EPLC Framework\nSection 3.6.3: Activities\n\nDuring the Development Phase, the final Test Plan is prepared. In addition, final drafts of the following project deliverables are developed: Business Product; Operations and Maintenance (O&M) Manual, describing the Business Product, operating environment, production processing requirements, ongoing maintenance activities, and problem tracking and change management procedures; Systems Security Plan, addressing system managerial, technical, and operational information security controls; Security Risk Assessment, documenting the analysis of information security functional requirements, threat impacts, and system protection requirements; Training Plan, describing overall goals and learning objectives; activities to develop, conduct, control, and evaluate training; and staff resource requirements; Training Materials, comprising all artifacts used to train system end users, such as instructor and student guides, audio and visual aids, computer-based and other media; User Manual, explaining how a business user operates the system.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Development_Phase_3.6_MERGED_FINAL_1765598996.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.6.3",
+        "section_title": "Activities",
+        "chunk_index": 5,
+        "chunk_count": 6,
+        "chunk_kind": "section_content",
+        "content_word_count": 131,
+        "schema_version": "4.0",
+        "phase": "Development Phase"
+      }
+    },
+    {
+      "id": "qna-3-6-4-00-24ac325c6a3d32da",
+      "document": "HHS EPLC Framework\nSection 3.6.4: Deliverables\n\nThis section covers: Test Plan (Final); Operation & Maintenance Manual (Final Draft); Systems Security Plan (SSP) (Final Draft); Training Plan (Final Draft); Training Materials (Final Draft); Security Risk Assessment (SRA) (Final Draft); User Manual (Final Draft); Business Product (Final Draft).",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Development_Phase_3.6_MERGED_FINAL_1765598996.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.6.4",
+        "section_title": "Deliverables",
+        "chunk_index": 0,
+        "chunk_count": 9,
+        "chunk_kind": "section_overview",
+        "content_word_count": 40,
+        "schema_version": "4.0",
+        "phase": "Development Phase"
+      }
+    },
+    {
+      "id": "qna-3-6-4-01-2be034ce3d47c993",
+      "document": "HHS EPLC Framework\nSection 3.6.4: Deliverables\n\nTest Plan (Final): The Test Plan defines the types of tests (e.g. unit, function, integration, system, information security, performance (load and stress), regression, user acceptance, and/or independent verification and validation) to be carried out. The document describes the acceptance criteria for those tests, roles and responsibilities of individuals involved in the testing process, traceability matrix, resources required (hardware and software environments), and other elements relevant to test planning and execution. This plan details the manner of testing (test cases, simulation, etc) of the integrated software/hardware system. It must include as part of the main document or as a separate document detailed Test Case Specifications that describe the purpose and manner of each specific test, the required inputs and expected results for the test, step-by-step procedures for executing the test, and the pass/fail criteria for determining acceptance.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Development_Phase_3.6_MERGED_FINAL_1765598996.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.6.4",
+        "section_title": "Deliverables",
+        "chunk_index": 1,
+        "chunk_count": 9,
+        "chunk_kind": "section_content",
+        "content_word_count": 136,
+        "schema_version": "4.0",
+        "phase": "Development Phase"
+      }
+    },
+    {
+      "id": "qna-3-6-4-02-5593c48e83059bbb",
+      "document": "HHS EPLC Framework\nSection 3.6.4: Deliverables\n\nOperation & Maintenance Manual (Final Draft): The Operations & Maintenance Manual clearly describes the Business Product that will be operating in the production environment and provides the operations and support staff with the information necessary to effectively handle routine production processing, ongoing maintenance, and identified problems, issues, and/or change requests.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Development_Phase_3.6_MERGED_FINAL_1765598996.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.6.4",
+        "section_title": "Deliverables",
+        "chunk_index": 2,
+        "chunk_count": 9,
+        "chunk_kind": "section_content",
+        "content_word_count": 50,
+        "schema_version": "4.0",
+        "phase": "Development Phase"
+      }
+    },
+    {
+      "id": "qna-3-6-4-03-4517ab63343d3ebe",
+      "document": "HHS EPLC Framework\nSection 3.6.4: Deliverables\n\nSystems Security Plan (SSP) (Final Draft): The SSP describes managerial, technical and operational security controls (defined by the National Institute of Standards and Technology) that are designed and implemented within the system.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Development_Phase_3.6_MERGED_FINAL_1765598996.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.6.4",
+        "section_title": "Deliverables",
+        "chunk_index": 3,
+        "chunk_count": 9,
+        "chunk_kind": "section_content",
+        "content_word_count": 32,
+        "schema_version": "4.0",
+        "phase": "Development Phase"
+      }
+    },
+    {
+      "id": "qna-3-6-4-04-46a9c6fc2e876d48",
+      "document": "HHS EPLC Framework\nSection 3.6.4: Deliverables\n\nTraining Plan (Final Draft): The Training Plan describes the overall goals, learning objectives, and activities that are to be performed to develop, conduct, control, and evaluate instructions that are to be provided to end users, operators, administrators, and support staff who will use, operate, and/or otherwise support the solution.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Development_Phase_3.6_MERGED_FINAL_1765598996.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.6.4",
+        "section_title": "Deliverables",
+        "chunk_index": 4,
+        "chunk_count": 9,
+        "chunk_kind": "section_content",
+        "content_word_count": 49,
+        "schema_version": "4.0",
+        "phase": "Development Phase"
+      }
+    },
+    {
+      "id": "qna-3-6-4-05-6e42fab4d5527302",
+      "document": "HHS EPLC Framework\nSection 3.6.4: Deliverables\n\nTraining Materials (Final Draft): Training Materials include the documentation associated with the deployment of the Business Product. This includes instructor and student guides, audio-visual aids, and computer-based or other media used to disseminate information about the final product to the target audience that is in need of the instruction.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Development_Phase_3.6_MERGED_FINAL_1765598996.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.6.4",
+        "section_title": "Deliverables",
+        "chunk_index": 5,
+        "chunk_count": 9,
+        "chunk_kind": "section_content",
+        "content_word_count": 49,
+        "schema_version": "4.0",
+        "phase": "Development Phase"
+      }
+    },
+    {
+      "id": "qna-3-6-4-06-6d4a7f34e952a312",
+      "document": "HHS EPLC Framework\nSection 3.6.4: Deliverables\n\nSecurity Risk Assessment (SRA) (Final Draft): A Security Risk Assessment will document the analysis of the information security functional requirements and will identify the protection requirements for the system using a formal risk assessment process. The risk assessment includes the identification of threats to and vulnerabilities in the information system; the potential impact or magnitude of harm that a loss of confidentiality, integrity, or availability would have on agency assets or operations and the identification and analysis of information security controls for the information system.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Development_Phase_3.6_MERGED_FINAL_1765598996.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.6.4",
+        "section_title": "Deliverables",
+        "chunk_index": 6,
+        "chunk_count": 9,
+        "chunk_kind": "section_content",
+        "content_word_count": 85,
+        "schema_version": "4.0",
+        "phase": "Development Phase"
+      }
+    },
+    {
+      "id": "qna-3-6-4-07-b6a330c008306e32",
+      "document": "HHS EPLC Framework\nSection 3.6.4: Deliverables\n\nUser Manual (Final Draft): The User Manual clearly explains how a business user is to use the established Business Product from a business function perspective.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Development_Phase_3.6_MERGED_FINAL_1765598996.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.6.4",
+        "section_title": "Deliverables",
+        "chunk_index": 7,
+        "chunk_count": 9,
+        "chunk_kind": "section_content",
+        "content_word_count": 25,
+        "schema_version": "4.0",
+        "phase": "Development Phase"
+      }
+    },
+    {
+      "id": "qna-3-6-4-08-79143da57dbfac8a",
+      "document": "HHS EPLC Framework\nSection 3.6.4: Deliverables\n\nBusiness Product (Final Draft): The Business Product is the primary result from the development effort that satisfies the established requirements. In software development efforts, it includes the original source code and machine-compiled, executable computer instructions and data repository (ies). It also includes an identification and description of all configuration items that comprise a specific build or release of the Business Product.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Development_Phase_3.6_MERGED_FINAL_1765598996.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.6.4",
+        "section_title": "Deliverables",
+        "chunk_index": 8,
+        "chunk_count": 9,
+        "chunk_kind": "section_content",
+        "content_word_count": 61,
+        "schema_version": "4.0",
+        "phase": "Development Phase"
+      }
+    },
+    {
+      "id": "qna-3-6-5-00-1a7ecc2cf1269f5a",
+      "document": "HHS EPLC Framework\nSection 3.6.5: Exit Criteria\n\nThis section covers: Objective; Phase Specific Exit Criteria; Generic Exit Criteria.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Development_Phase_3.6_MERGED_FINAL_1765598996.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.6.5",
+        "section_title": "Exit Criteria",
+        "chunk_index": 0,
+        "chunk_count": 4,
+        "chunk_kind": "section_overview",
+        "content_word_count": 11,
+        "schema_version": "4.0",
+        "phase": "Development Phase"
+      }
+    },
+    {
+      "id": "qna-3-6-5-01-346240d051f1e863",
+      "document": "HHS EPLC Framework\nSection 3.6.5: Exit Criteria\n\nObjective: To determine if the code and/or other deliverables needed to build the Business Product have been completed within cost, schedule, and scope guidelines.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Development_Phase_3.6_MERGED_FINAL_1765598996.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.6.5",
+        "section_title": "Exit Criteria",
+        "chunk_index": 1,
+        "chunk_count": 4,
+        "chunk_kind": "section_content",
+        "content_word_count": 24,
+        "schema_version": "4.0",
+        "phase": "Development Phase"
+      }
+    },
+    {
+      "id": "qna-3-6-5-02-722152c33e359687",
+      "document": "HHS EPLC Framework\nSection 3.6.5: Exit Criteria\n\nPhase Specific Exit Criteria: Business Product satisfies the requirements established and refined during the Requirements and Design Phases. Test Plan ensures that all test cases will be adequately evaluated and executed, and system tested to ensure requirements are met. Information Security plans and risk assessments are complete and in compliance with regulatory requirements.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Development_Phase_3.6_MERGED_FINAL_1765598996.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.6.5",
+        "section_title": "Exit Criteria",
+        "chunk_index": 2,
+        "chunk_count": 4,
+        "chunk_kind": "section_content",
+        "content_word_count": 53,
+        "schema_version": "4.0",
+        "phase": "Development Phase"
+      }
+    },
+    {
+      "id": "qna-3-6-5-03-44c73037be5ab8cd",
+      "document": "HHS EPLC Framework\nSection 3.6.5: Exit Criteria\n\nGeneric Exit Criteria: Variances from baselines have been identified and mitigated. Project Baselines have been reviewed and revised as appropriate. The Project Management Plan and component plans have been reviewed and appropriately updated. This includes Risk Management, Acquisition Strategy, Change Management, Configuration Management, System Categorization, Requirements Management, Communication Plan, WBS/Schedule, IV&V Planning, Quality Assurance, Records Management, and Staffing Management Plan.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Development_Phase_3.6_MERGED_FINAL_1765598996.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.6.5",
+        "section_title": "Exit Criteria",
+        "chunk_index": 3,
+        "chunk_count": 4,
+        "chunk_kind": "section_content",
+        "content_word_count": 60,
+        "schema_version": "4.0",
+        "phase": "Development Phase"
+      }
+    },
+    {
+      "id": "qna-3-6-6-00-e9e9d1a01e3ee9ec",
+      "document": "HHS EPLC Framework\nSection 3.6.6: Project Reviews\n\nThis section covers: Two project reviews will be conducted during the Development Phase.; The first is the Validation Readiness Review (VRR).; The second review is the Independent Verification & Validation Assessment..",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Development_Phase_3.6_MERGED_FINAL_1765598996.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.6.6",
+        "section_title": "Project Reviews",
+        "chunk_index": 0,
+        "chunk_count": 4,
+        "chunk_kind": "section_overview",
+        "content_word_count": 31,
+        "schema_version": "4.0",
+        "phase": "Development Phase"
+      }
+    },
+    {
+      "id": "qna-3-6-6-01-090e37e7fde007ea",
+      "document": "HHS EPLC Framework\nSection 3.6.6: Project Reviews\n\nTwo project reviews will be conducted during the Development Phase.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Development_Phase_3.6_MERGED_FINAL_1765598996.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.6.6",
+        "section_title": "Project Reviews",
+        "chunk_index": 1,
+        "chunk_count": 4,
+        "chunk_kind": "section_content",
+        "content_word_count": 10,
+        "schema_version": "4.0",
+        "phase": "Development Phase"
+      }
+    },
+    {
+      "id": "qna-3-6-6-02-5c4490ea3ac18f30",
+      "document": "HHS EPLC Framework\nSection 3.6.6: Project Reviews\n\nThe first is the Validation Readiness Review (VRR). The VRR is conducted to provide assurance that the Business Product that is about to enter validation (system) testing has completed thorough unit/module/software integration testing during the development of the Business Product and is ready for turnover to the formal, controlled test environment where validation testing will be conducted. The scope of the VRR is to inspect the test products and test results obtained during development testing for completeness and accuracy, and to verify that test planning, test cases, scenarios, and scripts provide adequate coverage of documented system requirements. In addition, a review of the test environment, test setup, and test data is performed to ensure they are adequately prepared for validation testing.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Development_Phase_3.6_MERGED_FINAL_1765598996.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.6.6",
+        "section_title": "Project Reviews",
+        "chunk_index": 2,
+        "chunk_count": 4,
+        "chunk_kind": "section_content",
+        "content_word_count": 121,
+        "schema_version": "4.0",
+        "phase": "Development Phase"
+      }
+    },
+    {
+      "id": "qna-3-6-6-03-3bc08a655744bc76",
+      "document": "HHS EPLC Framework\nSection 3.6.6: Project Reviews\n\nThe second review is the Independent Verification & Validation Assessment. An IV&V Assessment is conducted by an independent third party to identify potential improvements that may not be apparent to those working directly on a project, or identify problems before they occur and thus avoid loss and minimize the cost of any necessary corrective action. IV&V Assessment also provides management with an independent perspective on the full scope of project activities, from planning through implementation.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Development_Phase_3.6_MERGED_FINAL_1765598996.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.6.6",
+        "section_title": "Project Reviews",
+        "chunk_index": 3,
+        "chunk_count": 4,
+        "chunk_kind": "section_content",
+        "content_word_count": 75,
+        "schema_version": "4.0",
+        "phase": "Development Phase"
+      }
+    },
+    {
+      "id": "qna-3-6-7-01-7167b98fcfe6a2bf",
+      "document": "HHS EPLC Framework\nSection 3.6.7: Stage Gate Review\n\nThe Development Stage Gate Review evaluates whether the project should proceed to the Test Phase.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Development_Phase_3.6_MERGED_FINAL_1765598996.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.6.7",
+        "section_title": "Stage Gate Review",
+        "chunk_index": 1,
+        "chunk_count": 1,
+        "chunk_kind": "section_content",
+        "content_word_count": 15,
+        "schema_version": "4.0",
+        "phase": "Development Phase"
+      }
+    },
+    {
+      "id": "qna-3-8-1-01-06aa6103595ae71b",
+      "document": "HHS EPLC Framework\nSection 3.8.1: Description\n\nDuring the Implementation Phase, the Business Product is moved from development status to production status. The process of implementation is dependent on the characteristics of the project and the Business Product, and thus may be synonymous with installation, deployment, rollout, or go-live. If necessary, data conversion, phased implementation, and training for using, operating, and maintaining the system are accomplished during the Implementation Phase. The final system must be formally authorized before use in the production environment during the Implementation Phase. The Implementation Phase ends with a formal decision to release the final Business Product into the Operations and Maintenance Phase.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Implementation_Phase_3.8.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.8.1",
+        "section_title": "Description",
+        "chunk_index": 1,
+        "chunk_count": 1,
+        "chunk_kind": "section_content",
+        "content_word_count": 100,
+        "schema_version": "4.0",
+        "phase": "Implementation Phase"
+      }
+    },
+    {
+      "id": "qna-3-8-2-00-5683efa787c8d69e",
+      "document": "HHS EPLC Framework\nSection 3.8.2: Responsibilities\n\nThis section covers: Business Owner; End Users; Project Manager; Integrated Project Team; Critical Partners; • Enterprise Architecture; IT Governance Organization.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Implementation_Phase_3.8.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.8.2",
+        "section_title": "Responsibilities",
+        "chunk_index": 0,
+        "chunk_count": 8,
+        "chunk_kind": "section_overview",
+        "content_word_count": 20,
+        "schema_version": "4.0",
+        "phase": "Implementation Phase"
+      }
+    },
+    {
+      "id": "qna-3-8-2-01-a41dae59935e0e35",
+      "document": "HHS EPLC Framework\nSection 3.8.2: Responsibilities\n\nBusiness Owner: This is the executive in charge of the organization, who serves as the primary customer and advocate for an IT project. The business owner is responsible for certifying that the performance of the new it project moved into the production environment meets business requirements.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Implementation_Phase_3.8.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.8.2",
+        "section_title": "Responsibilities",
+        "chunk_index": 1,
+        "chunk_count": 8,
+        "chunk_kind": "section_content",
+        "content_word_count": 46,
+        "schema_version": "4.0",
+        "phase": "Implementation Phase"
+      }
+    },
+    {
+      "id": "qna-3-8-2-02-e6c713cd3918fdef",
+      "document": "HHS EPLC Framework\nSection 3.8.2: Responsibilities\n\nEnd Users: End users begin utilizing the new IT projects on a daily basis. They may also funnel improvement requests to the IPT for future releases.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Implementation_Phase_3.8.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.8.2",
+        "section_title": "Responsibilities",
+        "chunk_index": 2,
+        "chunk_count": 8,
+        "chunk_kind": "section_content",
+        "content_word_count": 26,
+        "schema_version": "4.0",
+        "phase": "Implementation Phase"
+      }
+    },
+    {
+      "id": "qna-3-8-2-03-c171b9cf7256538b",
+      "document": "HHS EPLC Framework\nSection 3.8.2: Responsibilities\n\nProject Manager: The Project Manager is responsible and accountable for the successful execution of the Implementation Phase. The Project Manager is responsible for leading the Integrated Project Team that accomplishes the Implementation Phase activities and deliverables.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Implementation_Phase_3.8.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.8.2",
+        "section_title": "Responsibilities",
+        "chunk_index": 3,
+        "chunk_count": 8,
+        "chunk_kind": "section_content",
+        "content_word_count": 36,
+        "schema_version": "4.0",
+        "phase": "Implementation Phase"
+      }
+    },
+    {
+      "id": "qna-3-8-2-04-e49a7a7c5df94bd4",
+      "document": "HHS EPLC Framework\nSection 3.8.2: Responsibilities\n\nIntegrated Project Team: The Integrated Project Team members (regardless of the organization of permanent assignment) are responsible for accomplishing assigned tasks as directed by the Project Manager.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Implementation_Phase_3.8.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.8.2",
+        "section_title": "Responsibilities",
+        "chunk_index": 4,
+        "chunk_count": 8,
+        "chunk_kind": "section_content",
+        "content_word_count": 27,
+        "schema_version": "4.0",
+        "phase": "Implementation Phase"
+      }
+    },
+    {
+      "id": "qna-3-8-2-05-fe3bb6d75a421cee",
+      "document": "HHS EPLC Framework\nSection 3.8.2: Responsibilities\n\nCritical Partners: The Critical Partners provide oversight, advice and counsel to the Project Manager on the conduct and requirements of the Implementation Phase. Additionally, they provide information, judgments, and recommendations to the Business Owner and IT Governance organization during project reviews and in support of Project Baselines.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Implementation_Phase_3.8.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.8.2",
+        "section_title": "Responsibilities",
+        "chunk_index": 5,
+        "chunk_count": 8,
+        "chunk_kind": "section_content",
+        "content_word_count": 47,
+        "schema_version": "4.0",
+        "phase": "Implementation Phase"
+      }
+    },
+    {
+      "id": "qna-3-8-2-06-ad622aec6b513c8d",
+      "document": "HHS EPLC Framework\nSection 3.8.2: Responsibilities\n\n• Enterprise Architecture: Confirm that approved change requests are compliant with the Enterprise Architecture. • Security: Determine if Plan of Actions and Milestones (POA&M), the Authority to Operate, including the System Authorization is complete and System of Record Notice is published. • Acquisition: Guarantee that the contracts are being fulfilled according to award or approved changes and completed contracts are closed appropriately. • Budget: Ascertain if change requests are reviewed to determine if a new financial analysis is required. • Finance: Ascertain if actual expenses are in accordance with the budget plan. • HR: Find if issues related to staffing, workforce, or other HR areas have been addressed. • Section 508: Establish that implementation has maintained the integrity of Section 508 compliance. • CPIC: Confirm that the project is still within the original scope and that current Implementation Plan is reasonable. • Performance: Confirm that the completed Business Product is operating as expected and is positioned to meet performance targets. • Records Management: Confirm that implementation maintained the necessary records management elements.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Implementation_Phase_3.8.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.8.2",
+        "section_title": "Responsibilities",
+        "chunk_index": 6,
+        "chunk_count": 8,
+        "chunk_kind": "section_content",
+        "content_word_count": 172,
+        "schema_version": "4.0",
+        "phase": "Implementation Phase"
+      }
+    },
+    {
+      "id": "qna-3-8-2-07-ffe8e90b5a74eb58",
+      "document": "HHS EPLC Framework\nSection 3.8.2: Responsibilities\n\nIT Governance Organization: The IT Governance organization conducts the Operational Readiness Review.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Implementation_Phase_3.8.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.8.2",
+        "section_title": "Responsibilities",
+        "chunk_index": 7,
+        "chunk_count": 8,
+        "chunk_kind": "section_content",
+        "content_word_count": 12,
+        "schema_version": "4.0",
+        "phase": "Implementation Phase"
+      }
+    },
+    {
+      "id": "qna-3-8-3-00-2ae71f666297f322",
+      "document": "HHS EPLC Framework\nSection 3.8.3: Activities\n\nThis section covers: The following activities are performed as part of the Implementation Phase.; All affected customers and organizations affected are notified of the implementation.; Typically, implementation includes converting existing data for use in the new system.; One of the ways verification of both system operation and data integrity can be accomplished is through parallel...; To ensure that the system is fully operational, install the system in a production environment.; During this phase, the documentation from all previous phases is finalized to align it with the delivered system.; Prior to the Operational Readiness Review, the Authority to Operate must be obtained and a System of Record...; Final versions of the following documents are prepared during the Implementation Phase, and are required before the project....",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Implementation_Phase_3.8.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.8.3",
+        "section_title": "Activities",
+        "chunk_index": 0,
+        "chunk_count": 9,
+        "chunk_kind": "section_overview",
+        "content_word_count": 124,
+        "schema_version": "4.0",
+        "phase": "Implementation Phase"
+      }
+    },
+    {
+      "id": "qna-3-8-3-01-fa984d2f88b14e46",
+      "document": "HHS EPLC Framework\nSection 3.8.3: Activities\n\nThe following activities are performed as part of the Implementation Phase.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Implementation_Phase_3.8.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.8.3",
+        "section_title": "Activities",
+        "chunk_index": 1,
+        "chunk_count": 9,
+        "chunk_kind": "section_content",
+        "content_word_count": 11,
+        "schema_version": "4.0",
+        "phase": "Implementation Phase"
+      }
+    },
+    {
+      "id": "qna-3-8-3-02-cdde03d1ab31399e",
+      "document": "HHS EPLC Framework\nSection 3.8.3: Activities\n\nAll affected customers and organizations affected are notified of the implementation. Additionally, it is good policy to make internal organizations not directly affected by the implementation aware of the schedule so that allowances can be made for a disruption in the normal activities of that section. The notification should include: • The schedule of the implementation • A brief synopsis of the benefits of the new system • The difference between the old and new system • Guidelines for the customers affected by the implementation during this phase • The process to obtain system support, including contact names and phone numbers",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Implementation_Phase_3.8.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.8.3",
+        "section_title": "Activities",
+        "chunk_index": 2,
+        "chunk_count": 9,
+        "chunk_kind": "section_content",
+        "content_word_count": 101,
+        "schema_version": "4.0",
+        "phase": "Implementation Phase"
+      }
+    },
+    {
+      "id": "qna-3-8-3-03-113890d27ca1efb4",
+      "document": "HHS EPLC Framework\nSection 3.8.3: Activities\n\nTypically, implementation includes converting existing data for use in the new system. The tasks for this effort are two-fold: data input and data verification. When replacing a manual system, hard copy data is entered into the automated system. Some sort of verification that the data is being entered correctly should be conducted throughout this process. This is also the case in data transfer, where data fields in the old system may have been entered inconsistently and therefore affect the integrity of the new database. Verification of the old data becomes imperative to a useful computer system.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Implementation_Phase_3.8.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.8.3",
+        "section_title": "Activities",
+        "chunk_index": 3,
+        "chunk_count": 9,
+        "chunk_kind": "section_content",
+        "content_word_count": 96,
+        "schema_version": "4.0",
+        "phase": "Implementation Phase"
+      }
+    },
+    {
+      "id": "qna-3-8-3-04-4bb209b49c496cca",
+      "document": "HHS EPLC Framework\nSection 3.8.3: Activities\n\nOne of the ways verification of both system operation and data integrity can be accomplished is through parallel operations. Parallel operations consist of running the old process or system and the new system simultaneously until the new system is authorized. In this way if the new system fails in any way, the operation can proceed on the old system while the bugs are worked out.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Implementation_Phase_3.8.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.8.3",
+        "section_title": "Activities",
+        "chunk_index": 4,
+        "chunk_count": 9,
+        "chunk_kind": "section_content",
+        "content_word_count": 65,
+        "schema_version": "4.0",
+        "phase": "Implementation Phase"
+      }
+    },
+    {
+      "id": "qna-3-8-3-05-26a7f3934b7d3939",
+      "document": "HHS EPLC Framework\nSection 3.8.3: Activities\n\nTo ensure that the system is fully operational, install the system in a production environment.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Implementation_Phase_3.8.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.8.3",
+        "section_title": "Activities",
+        "chunk_index": 5,
+        "chunk_count": 9,
+        "chunk_kind": "section_content",
+        "content_word_count": 15,
+        "schema_version": "4.0",
+        "phase": "Implementation Phase"
+      }
+    },
+    {
+      "id": "qna-3-8-3-06-0198f6076c26968b",
+      "document": "HHS EPLC Framework\nSection 3.8.3: Activities\n\nDuring this phase, the documentation from all previous phases is finalized to align it with the delivered system. The Project Manager coordinates these update activities.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Implementation_Phase_3.8.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.8.3",
+        "section_title": "Activities",
+        "chunk_index": 6,
+        "chunk_count": 9,
+        "chunk_kind": "section_content",
+        "content_word_count": 25,
+        "schema_version": "4.0",
+        "phase": "Implementation Phase"
+      }
+    },
+    {
+      "id": "qna-3-8-3-07-b8cd5daf7eb59269",
+      "document": "HHS EPLC Framework\nSection 3.8.3: Activities\n\nPrior to the Operational Readiness Review, the Authority to Operate must be obtained and a System of Record Notice published.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Implementation_Phase_3.8.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.8.3",
+        "section_title": "Activities",
+        "chunk_index": 7,
+        "chunk_count": 9,
+        "chunk_kind": "section_content",
+        "content_word_count": 20,
+        "schema_version": "4.0",
+        "phase": "Implementation Phase"
+      }
+    },
+    {
+      "id": "qna-3-8-3-08-86abd79b9cefa139",
+      "document": "HHS EPLC Framework\nSection 3.8.3: Activities\n\nFinal versions of the following documents are prepared during the Implementation Phase, and are required before the project proceeds to the Operations and Maintenance Phase: • Business Product • Project Completion Report • Service Level Agreements (SLAs) and Memoranda of Understanding (MOU) • Contingency/Disaster Recovery Plan • Operations and Maintenance (O&M) Manual • Systems Security Plan • Security Risk Assessment • Training Plan • Training Materials • User Manual",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Implementation_Phase_3.8.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.8.3",
+        "section_title": "Activities",
+        "chunk_index": 8,
+        "chunk_count": 9,
+        "chunk_kind": "section_content",
+        "content_word_count": 69,
+        "schema_version": "4.0",
+        "phase": "Implementation Phase"
+      }
+    },
+    {
+      "id": "qna-3-8-4-00-2ab3a2b2c7949940",
+      "document": "HHS EPLC Framework\nSection 3.8.4: Deliverables\n\nThis section covers: Authority to Operate (ATO) with components (Final); System of Record Notice (SORN) (Final); Service Level Agreement(s) (SLAs) and/or Memorandum(s) of Understanding (MOU); Operation & Maintenance Manual (Final); Systems Security Plan (SSP) (Final); Training Plan (Final); Training Materials (Final); Security Risk Assessment (SRA) (Final); User Manual (Final); Business Product (Final); Project Completion Report (Final); Contingency/Disaster Recovery Plan (Final); Plan of Action and Milestones (POA&M); Privacy Impact Assessment (Final).",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Implementation_Phase_3.8.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.8.4",
+        "section_title": "Deliverables",
+        "chunk_index": 0,
+        "chunk_count": 15,
+        "chunk_kind": "section_overview",
+        "content_word_count": 70,
+        "schema_version": "4.0",
+        "phase": "Implementation Phase"
+      }
+    },
+    {
+      "id": "qna-3-8-4-01-300a22967d5d7bb8",
+      "document": "HHS EPLC Framework\nSection 3.8.4: Deliverables\n\nAuthority to Operate (ATO) with components (Final): Security Authorization Letters; Section 508 Product Certifications/Exceptions. An Authority to Operate (ATO) is a formal declaration by an Authorizing Official (AO) that authorizes operation of a Business Product and explicitly accepts the risk to agency operations (including mission, functions, image, or reputation), agency assets, or individuals, based on the implementation of an agreed-upon set of information security controls. Though not security-specific, formal documentation of Section 508 Certification or Exception is also required before a Business Product can be released into operation.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Implementation_Phase_3.8.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.8.4",
+        "section_title": "Deliverables",
+        "chunk_index": 1,
+        "chunk_count": 15,
+        "chunk_kind": "section_content",
+        "content_word_count": 88,
+        "schema_version": "4.0",
+        "phase": "Implementation Phase"
+      }
+    },
+    {
+      "id": "qna-3-8-4-02-5b14d5a509ce8760",
+      "document": "HHS EPLC Framework\nSection 3.8.4: Deliverables\n\nSystem of Record Notice (SORN) (Final): The Privacy Act defines a System of Record (SOR) as a group of any records under the control of a Federal agency from which information is retrieved by the name of the individual or by some identifying number, symbol, or other identifying particular assigned to the individual. Additionally, the Privacy Act requires that the Federal government inform the public of any collection of information about its citizens from which data are retrieved by a unique identifier as described above. The System of Record Notice (SORN) fulfills this requirement to inform the public via the publication of a system notice in the Federal Register. This notice describes the SOR and gives the public an opportunity to comment. Without the written consent of the subject individual, the Privacy Act prohibits the release of protected information maintained in a SOR unless one of the 12 defined disclosure exceptions is applicable.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Implementation_Phase_3.8.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.8.4",
+        "section_title": "Deliverables",
+        "chunk_index": 2,
+        "chunk_count": 15,
+        "chunk_kind": "section_content",
+        "content_word_count": 153,
+        "schema_version": "4.0",
+        "phase": "Implementation Phase"
+      }
+    },
+    {
+      "id": "qna-3-8-4-03-0586a43bab6619f9",
+      "document": "HHS EPLC Framework\nSection 3.8.4: Deliverables\n\nService Level Agreement(s) (SLAs) and/or Memorandum(s) of Understanding (MOU): A Service Level Agreement(s) (SLAs) is a contractual agreement between a service provider and their customer specifying performance guarantees with associated penalties should the service not be performed as contracted. A Memorandum(s) of Understanding (MOU) is a legal document that outlines the terms and details of an agreement between parties, including each parties requirements, responsibilities and period of performance.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Implementation_Phase_3.8.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.8.4",
+        "section_title": "Deliverables",
+        "chunk_index": 3,
+        "chunk_count": 15,
+        "chunk_kind": "section_content",
+        "content_word_count": 68,
+        "schema_version": "4.0",
+        "phase": "Implementation Phase"
+      }
+    },
+    {
+      "id": "qna-3-8-4-04-400522f9f41a820f",
+      "document": "HHS EPLC Framework\nSection 3.8.4: Deliverables\n\nOperation & Maintenance Manual (Final): Help Desk Support. The Operations & Maintenance Manual clearly describes the Business Product that will be operating in the production environment and provides the operations and support staff with the information necessary to effectively handle routine production processing, ongoing maintenance, and identified problems, issues, and/or change requests.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Implementation_Phase_3.8.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.8.4",
+        "section_title": "Deliverables",
+        "chunk_index": 4,
+        "chunk_count": 15,
+        "chunk_kind": "section_content",
+        "content_word_count": 52,
+        "schema_version": "4.0",
+        "phase": "Implementation Phase"
+      }
+    },
+    {
+      "id": "qna-3-8-4-05-fba5a58bfe974144",
+      "document": "HHS EPLC Framework\nSection 3.8.4: Deliverables\n\nSystems Security Plan (SSP) (Final): The SSP describes managerial, technical and operational security controls (defined by the National Institute of Standards and Technology) that are designed and implemented within the system.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Implementation_Phase_3.8.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.8.4",
+        "section_title": "Deliverables",
+        "chunk_index": 5,
+        "chunk_count": 15,
+        "chunk_kind": "section_content",
+        "content_word_count": 31,
+        "schema_version": "4.0",
+        "phase": "Implementation Phase"
+      }
+    },
+    {
+      "id": "qna-3-8-4-06-da596b3bfbea683b",
+      "document": "HHS EPLC Framework\nSection 3.8.4: Deliverables\n\nTraining Plan (Final): The Training Plan describes the overall goals, learning objectives, and activities that are to be performed to develop, conduct, control, and evaluate instructions that are to be provided to end users, operators, administrators, and support staff who will use, operate, and/or otherwise support the solution.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Implementation_Phase_3.8.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.8.4",
+        "section_title": "Deliverables",
+        "chunk_index": 6,
+        "chunk_count": 15,
+        "chunk_kind": "section_content",
+        "content_word_count": 48,
+        "schema_version": "4.0",
+        "phase": "Implementation Phase"
+      }
+    },
+    {
+      "id": "qna-3-8-4-07-183289b4aa9c5482",
+      "document": "HHS EPLC Framework\nSection 3.8.4: Deliverables\n\nTraining Materials (Final): Training Materials include the documentation associated with the deployment of the Business Product. This includes instructor and student guides, audio-visual aids, and computer-based or other media used to disseminate information about the final product to the target audience that is in need of the instruction.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Implementation_Phase_3.8.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.8.4",
+        "section_title": "Deliverables",
+        "chunk_index": 7,
+        "chunk_count": 15,
+        "chunk_kind": "section_content",
+        "content_word_count": 48,
+        "schema_version": "4.0",
+        "phase": "Implementation Phase"
+      }
+    },
+    {
+      "id": "qna-3-8-4-08-3766f70433fe1522",
+      "document": "HHS EPLC Framework\nSection 3.8.4: Deliverables\n\nSecurity Risk Assessment (SRA) (Final): A Security Risk Assessment will document the analysis of the information security functional requirements and will identify the protection requirements for the system using a formal risk assessment process. The risk assessment includes the identification of threats to and vulnerabilities in the information system; the potential impact or magnitude of harm that a loss of confidentiality, integrity, or availability would have on agency assets or operations and the identification and analysis of information security controls for the information system.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Implementation_Phase_3.8.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.8.4",
+        "section_title": "Deliverables",
+        "chunk_index": 8,
+        "chunk_count": 15,
+        "chunk_kind": "section_content",
+        "content_word_count": 84,
+        "schema_version": "4.0",
+        "phase": "Implementation Phase"
+      }
+    },
+    {
+      "id": "qna-3-8-4-09-4c07bb4d8d91f819",
+      "document": "HHS EPLC Framework\nSection 3.8.4: Deliverables\n\nUser Manual (Final): The User Manual clearly explains how a business user is to use the established Business Product from a business function perspective.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Implementation_Phase_3.8.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.8.4",
+        "section_title": "Deliverables",
+        "chunk_index": 9,
+        "chunk_count": 15,
+        "chunk_kind": "section_content",
+        "content_word_count": 24,
+        "schema_version": "4.0",
+        "phase": "Implementation Phase"
+      }
+    },
+    {
+      "id": "qna-3-8-4-10-ac609c41b097aefe",
+      "document": "HHS EPLC Framework\nSection 3.8.4: Deliverables\n\nBusiness Product (Final): Version Description Document. The Business Product is the primary result from the development effort that satisfies the established requirements. In software development efforts, it includes the original source code and machine-compiled, executable computer instructions and data repository(ies). It also includes an identification and description of all configuration items that comprise a specific build or release of the Business Product.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Implementation_Phase_3.8.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.8.4",
+        "section_title": "Deliverables",
+        "chunk_index": 10,
+        "chunk_count": 15,
+        "chunk_kind": "section_content",
+        "content_word_count": 62,
+        "schema_version": "4.0",
+        "phase": "Implementation Phase"
+      }
+    },
+    {
+      "id": "qna-3-8-4-11-98b40b942d2152e2",
+      "document": "HHS EPLC Framework\nSection 3.8.4: Deliverables\n\nProject Completion Report (Final): Closeout Certification; Lessons Learned. The Project Completion Report describes any differences between proposed and actual accomplishments, documents lessons learned, provides a status of funds, and provides an explanation of any open-ended action items, along with a certification of conditional or final closeout of the development project.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Implementation_Phase_3.8.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.8.4",
+        "section_title": "Deliverables",
+        "chunk_index": 11,
+        "chunk_count": 15,
+        "chunk_kind": "section_content",
+        "content_word_count": 50,
+        "schema_version": "4.0",
+        "phase": "Implementation Phase"
+      }
+    },
+    {
+      "id": "qna-3-8-4-12-632edd45017b42d4",
+      "document": "HHS EPLC Framework\nSection 3.8.4: Deliverables\n\nContingency/Disaster Recovery Plan (Final): The Contingency/Disaster Recovery Plan describes the strategy and organized course of action that is to be taken if things don’t go as planned or if there is a loss of use of the established business product (e.g., system) due to a disaster such as a flood, fire, computer virus, or major failure. The plan describes the strategy for ensuring recovery of the business product in accordance with stated recovery time and recovery point objectives.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Implementation_Phase_3.8.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.8.4",
+        "section_title": "Deliverables",
+        "chunk_index": 12,
+        "chunk_count": 15,
+        "chunk_kind": "section_content",
+        "content_word_count": 78,
+        "schema_version": "4.0",
+        "phase": "Implementation Phase"
+      }
+    },
+    {
+      "id": "qna-3-8-4-13-b88745ef5a2e49db",
+      "document": "HHS EPLC Framework\nSection 3.8.4: Deliverables\n\nPlan of Action and Milestones (POA&M): A management process that outlines weaknesses and delineates the tasks necessary to mitigate them. The HHS Information Security Program POA&M process will be used to facilitate the remediation of information security program- and system-level weaknesses, and will provide a means for: • Planning and monitoring corrective actions; • Defining roles and responsibilities for weakness resolution; • Assisting in identifying the information security funding requirements necessary to mitigate weaknesses; • Tracking and prioritizing resources; and • Informing decision makers.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Implementation_Phase_3.8.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.8.4",
+        "section_title": "Deliverables",
+        "chunk_index": 13,
+        "chunk_count": 15,
+        "chunk_kind": "section_content",
+        "content_word_count": 84,
+        "schema_version": "4.0",
+        "phase": "Implementation Phase"
+      }
+    },
+    {
+      "id": "qna-3-8-4-14-7535b1b23ed58310",
+      "document": "HHS EPLC Framework\nSection 3.8.4: Deliverables\n\nPrivacy Impact Assessment (Final): A PIA is an agency review of how collected information is handled and protected in a manner consistent with Federal standards for privacy and information security. The PIA determines what kind of information in identifiable form is contained within a system, what is done with that information, and how that information is protected. Though the PIA specifically refers to \"privacy\", a PIA also typically covers confidentiality, access to data, and use of data.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Implementation_Phase_3.8.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.8.4",
+        "section_title": "Deliverables",
+        "chunk_index": 14,
+        "chunk_count": 15,
+        "chunk_kind": "section_content",
+        "content_word_count": 77,
+        "schema_version": "4.0",
+        "phase": "Implementation Phase"
+      }
+    },
+    {
+      "id": "qna-3-8-5-00-bbdf80c7636f3ebd",
+      "document": "HHS EPLC Framework\nSection 3.8.5: Exit Criteria\n\nThis section covers: Objective; Phase Specific Exit Criteria; Generic Exit Criteria.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Implementation_Phase_3.8.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.8.5",
+        "section_title": "Exit Criteria",
+        "chunk_index": 0,
+        "chunk_count": 4,
+        "chunk_kind": "section_overview",
+        "content_word_count": 11,
+        "schema_version": "4.0",
+        "phase": "Implementation Phase"
+      }
+    },
+    {
+      "id": "qna-3-8-5-01-2beef7cb7e2c86b2",
+      "document": "HHS EPLC Framework\nSection 3.8.5: Exit Criteria\n\nObjective: To verify the operational readiness of the Business Product for release into the production environment",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Implementation_Phase_3.8.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.8.5",
+        "section_title": "Exit Criteria",
+        "chunk_index": 1,
+        "chunk_count": 4,
+        "chunk_kind": "section_content",
+        "content_word_count": 16,
+        "schema_version": "4.0",
+        "phase": "Implementation Phase"
+      }
+    },
+    {
+      "id": "qna-3-8-5-02-c768503a493da44f",
+      "document": "HHS EPLC Framework\nSection 3.8.5: Exit Criteria\n\nPhase Specific Exit Criteria: • Business Product ready for production service and notification of the new solution is provided to all end users and staff who are affected. • No significant outstanding concerns among stakeholders regarding implementation. • All security authorization documents are complete and accurate, and conform to NIST requirements and HHS standards. This ensures that the security authorization letters are signed and that all POA&M items are up to date.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Implementation_Phase_3.8.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.8.5",
+        "section_title": "Exit Criteria",
+        "chunk_index": 2,
+        "chunk_count": 4,
+        "chunk_kind": "section_content",
+        "content_word_count": 72,
+        "schema_version": "4.0",
+        "phase": "Implementation Phase"
+      }
+    },
+    {
+      "id": "qna-3-8-5-03-09ccfa6c7a1397da",
+      "document": "HHS EPLC Framework\nSection 3.8.5: Exit Criteria\n\nGeneric Exit Criteria: • Variances from baselines have been identified and mitigated. [Cost and schedule variances and scope changes are identified, significant variances are explained, and Corrective Action Plans (CAPs) or rebaseline requests are in place as appropriate.] • Project Baselines have been reviewed and revised as appropriate. [Should this project continue as-is, be modified, or be terminated based on current knowledge?] • The Project Management Plan and component plans have been reviewed and appropriately updated. [This includes Risk Management, Acquisition Strategy, Change Management, Configuration Management, System Categorization, Requirements Management, Communication Plan, WBS/Schedule, IV&V Planning, Quality Assurance, Records Management, and Staffing Management Plan.]",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Implementation_Phase_3.8.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.8.5",
+        "section_title": "Exit Criteria",
+        "chunk_index": 3,
+        "chunk_count": 4,
+        "chunk_kind": "section_content",
+        "content_word_count": 103,
+        "schema_version": "4.0",
+        "phase": "Implementation Phase"
+      }
+    },
+    {
+      "id": "qna-3-8-6-00-d9779211393f5279",
+      "document": "HHS EPLC Framework\nSection 3.8.6: Project Reviews\n\nThis section covers: Three project reviews are required during the Implementation Phase.; The first is Security Control Assessment.; The second review is the System Accreditation.; The third review is the Post-Implementation Review (PIR)..",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Implementation_Phase_3.8.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.8.6",
+        "section_title": "Project Reviews",
+        "chunk_index": 0,
+        "chunk_count": 5,
+        "chunk_kind": "section_overview",
+        "content_word_count": 33,
+        "schema_version": "4.0",
+        "phase": "Implementation Phase"
+      }
+    },
+    {
+      "id": "qna-3-8-6-01-2b1c79c58435e97b",
+      "document": "HHS EPLC Framework\nSection 3.8.6: Project Reviews\n\nThree project reviews are required during the Implementation Phase.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Implementation_Phase_3.8.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.8.6",
+        "section_title": "Project Reviews",
+        "chunk_index": 1,
+        "chunk_count": 5,
+        "chunk_kind": "section_content",
+        "content_word_count": 9,
+        "schema_version": "4.0",
+        "phase": "Implementation Phase"
+      }
+    },
+    {
+      "id": "qna-3-8-6-02-defbab5419293d14",
+      "document": "HHS EPLC Framework\nSection 3.8.6: Project Reviews\n\nThe first is Security Control Assessment. Security Control Assessment is the comprehensive evaluation of the management, operational, and technical information security controls implemented for an information system to ensure compliance with information security requirements. The Security Control Assessment includes review of the Information Security Risk Assessment (IS RA), System Security Plan (SSP), other system life cycle documentation, and any findings from past assessments, reviews and/or audits, as well as technical testing and analysis. The technical component of the Security Control Assessment, called the Security Test and Evaluation (ST&E) process, is the execution of test procedures and techniques by an independent third party designed to evaluate the effectiveness of information security controls in a particular environment, and to identify any vulnerabilities in the information system. The results of the assessment, together with a review of any other independent audits, reviews or assessments are documented and appropriate corrective action is taken to strengthen internal controls. The SSP and/or IS RA are then updated based upon improvements and changes made to the system, and then the system is approved prior to subsequent Security Authorization (i.e., authorization to process) by the organization’s Authorizing Official (AO).",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Implementation_Phase_3.8.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.8.6",
+        "section_title": "Project Reviews",
+        "chunk_index": 2,
+        "chunk_count": 5,
+        "chunk_kind": "section_content",
+        "content_word_count": 191,
+        "schema_version": "4.0",
+        "phase": "Implementation Phase"
+      }
+    },
+    {
+      "id": "qna-3-8-6-03-4712821d71f0d343",
+      "document": "HHS EPLC Framework\nSection 3.8.6: Project Reviews\n\nThe second review is the System Accreditation. System Accreditation is the official management decision to authorize operation of an information system. To make an informed decision, the organization’s AO must have sufficient knowledge and understanding of the current status of the information security programs and information security controls in place to protect the system and information processed, stored, or transmitted by the system. This is a business-driven, risk-based decision founded upon current, credible, comprehensive documentation and test results provided in the System Authorization package prepared as a result of predecessor System Authorization activities. The organization’s AO must explicitly accept or reject any identified residual risks to the organization’s operations and assets remaining after the implementation of the prescribed set of information security controls as documented in the SSP and/or IS RA. Ultimately, the AO must strike a firm balance between authorizing the operation of information systems necessary to support completion of the business mission, while ensuring that an adequate level of information security is in place. The objective is to strive to implement the most effective information security controls, in consideration of technical, budgetary, time, and resource limitations, while continuing to support business mission requirements.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Implementation_Phase_3.8.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.8.6",
+        "section_title": "Project Reviews",
+        "chunk_index": 3,
+        "chunk_count": 5,
+        "chunk_kind": "section_content",
+        "content_word_count": 195,
+        "schema_version": "4.0",
+        "phase": "Implementation Phase"
+      }
+    },
+    {
+      "id": "qna-3-8-6-04-76f9c06054f5dd4d",
+      "document": "HHS EPLC Framework\nSection 3.8.6: Project Reviews\n\nThe third review is the Post-Implementation Review (PIR). After a period of sustained operation (after at least one full processing and reporting cycle has been completed and all end users have been trained and are comfortable with the operation), a PIR is conducted on the completed Business Product that was released into the production environment to determine if it is operating as expected. The purpose of the review is to ascertain the degree of success from the project (in particular, the extent to which it met its objectives, delivered planned levels of benefit, and addressed the specific requirements as originally defined), to examine the efficacy of all elements of the working business solution to see if further improvements can be made to optimize the benefit delivered, and to learn lessons from the project that can be used to improve future project work and solutions.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Implementation_Phase_3.8.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.8.6",
+        "section_title": "Project Reviews",
+        "chunk_index": 4,
+        "chunk_count": 5,
+        "chunk_kind": "section_content",
+        "content_word_count": 144,
+        "schema_version": "4.0",
+        "phase": "Implementation Phase"
+      }
+    },
+    {
+      "id": "qna-3-8-7-01-a87324de426fe8c5",
+      "document": "HHS EPLC Framework\nSection 3.8.7: Stage Gate Review\n\nThe Operational Readiness Review (ORR) is a formal inspection conducted to determine if the final Business Product that has been developed or acquired, tested, and implemented is ready for release into the production environment for sustained operations and maintenance support. The IT Governance organization cannot delegate this review.",
+      "metadata": {
+        "document_title": "HHS EPLC Framework",
+        "source_file": "Implementation_Phase_3.8.json",
+        "source_type": "eplc_framework",
+        "section_number": "3.8.7",
+        "section_title": "Stage Gate Review",
+        "chunk_index": 1,
+        "chunk_count": 1,
+        "chunk_kind": "section_content",
+        "content_word_count": 48,
+        "schema_version": "4.0",
+        "phase": "Implementation Phase"
+      }
+    },
+    {
+      "id": "qna-1-01-c89549d152c61f6e",
+      "document": "HHS EPLC Policy\nSection 1: Version History\n\nVersion # | Description of Change(s) | Change Implemented By | Date. 1 - Baseline - OCIO - 10/06/2008. 2 - For a description of changes, please see CR-2016-11-02T09:45:35 located on the EPLC CCB Portal. - OCIO - 11/30/2016.",
+      "metadata": {
+        "document_title": "HHS EPLC Policy",
+        "source_file": "HHS EPLC Website.json",
+        "source_type": "hhs_policy",
+        "section_number": "1",
+        "section_title": "Version History",
+        "chunk_index": 1,
+        "chunk_count": 1,
+        "chunk_kind": "section_content",
+        "content_word_count": 39,
+        "schema_version": "4.0"
+      }
+    },
+    {
+      "id": "qna-2-01-a9060d9a22d1c4ee",
+      "document": "HHS EPLC Policy\nSection 2: Nature of Changes\n\nThis policy revises and supersedes the 'HHS OCIO Policy for Information Technology (IT) Enterprise Performance Life Cycle (EPLC)' dated October 6, 2008.",
+      "metadata": {
+        "document_title": "HHS EPLC Policy",
+        "source_file": "HHS EPLC Website.json",
+        "source_type": "hhs_policy",
+        "section_number": "2",
+        "section_title": "Nature of Changes",
+        "chunk_index": 1,
+        "chunk_count": 1,
+        "chunk_kind": "section_content",
+        "content_word_count": 22,
+        "schema_version": "4.0"
+      }
+    },
+    {
+      "id": "qna-3-01-559050566947395b",
+      "document": "HHS EPLC Policy\nSection 3: Purpose\n\nThis policy mandates the use of the Department of Health & Human Services (HHS) Enterprise Performance Life Cycle (EPLC) framework for information technology (IT) project management at HHS. This policy incorporates the EPLC as a partner to HHS Capital Planning and Investment Control (CPIC) and HHS Enterprise Architecture.",
+      "metadata": {
+        "document_title": "HHS EPLC Policy",
+        "source_file": "HHS EPLC Website.json",
+        "source_type": "hhs_policy",
+        "section_number": "3",
+        "section_title": "Purpose",
+        "chunk_index": 1,
+        "chunk_count": 1,
+        "chunk_kind": "section_content",
+        "content_word_count": 48,
+        "schema_version": "4.0"
+      }
+    },
+    {
+      "id": "qna-4-01-56ee39a52c5ccf7b",
+      "document": "HHS EPLC Policy\nSection 4: Background\n\nIn October 2008, HHS issued the HHS OCIO Policy for Information Technology Enterprise Performance Life Cycle along with the EPLC Framework Overview Document that describes a structured approach to planning, managing, and overseeing HHS IT projects over their entire life cycle. The EPLC Policy, together with the EPLC Framework, serves as the authority for EPLC requirements, objectives, responsibilities, and standards for managing all IT projects at HHS. The EPLC Policy was revised in 2016 to incorporate project management elements of FITARA. Implementing the EPLC framework helps ensure the quality of HHS IT products through improved project management processes and accountability.",
+      "metadata": {
+        "document_title": "HHS EPLC Policy",
+        "source_file": "HHS EPLC Website.json",
+        "source_type": "hhs_policy",
+        "section_number": "4",
+        "section_title": "Background",
+        "chunk_index": 1,
+        "chunk_count": 1,
+        "chunk_kind": "section_content",
+        "content_word_count": 100,
+        "schema_version": "4.0"
+      }
+    },
+    {
+      "id": "qna-5-01-c52c7032da0c1ea0",
+      "document": "HHS EPLC Policy\nSection 5: Scope\n\nThis policy applies to all HHS IT projects throughout the life cycle of the project, regardless of development methodology, funding source, or whether the delivered product is owned and operated by HHS or a third party acting on behalf of HHS. It applies to all HHS OPDIVs and STAFFDIVs, including contractors, interns, and organizations acting on behalf of HHS. The policy shall be implemented in accordance with HHS Acquisition Regulation (HHSAR) and other applicable laws and agreements.",
+      "metadata": {
+        "document_title": "HHS EPLC Policy",
+        "source_file": "HHS EPLC Website.json",
+        "source_type": "hhs_policy",
+        "section_number": "5",
+        "section_title": "Scope",
+        "chunk_index": 1,
+        "chunk_count": 1,
+        "chunk_kind": "section_content",
+        "content_word_count": 77,
+        "schema_version": "4.0"
+      }
+    },
+    {
+      "id": "qna-6-01-2532943ee38325fb",
+      "document": "HHS EPLC Policy\nSection 6: Policy\n\nAll HHS IT projects shall be managed using the HHS EPLC Framework, including life cycle phases, reviews, deliverables, activities, responsibilities, and tailoring, regardless of the specific development methodology used. Projects must ensure incremental delivery of new or modified functionality at least every six months, using proven methods such as agile. This policy shall be applied in conjunction with the HHS Policy for Enterprise Architecture (EA), Capital Planning and Investment Control (CPIC), and Portfolio Management (PfM). OPDIVs and STAFFDIVs may create a more restrictive policy but not one that is less compliant than this Department Policy.",
+      "metadata": {
+        "document_title": "HHS EPLC Policy",
+        "source_file": "HHS EPLC Website.json",
+        "source_type": "hhs_policy",
+        "section_number": "6",
+        "section_title": "Policy",
+        "chunk_index": 1,
+        "chunk_count": 1,
+        "chunk_kind": "section_content",
+        "content_word_count": 95,
+        "schema_version": "4.0"
+      }
+    },
+    {
+      "id": "qna-7-01-6a1a41abd536f466",
+      "document": "HHS EPLC Policy\nSection 7: Guiding Principles\n\nFlexibility: The EPLC is designed to provide flexibility while managing risk and accommodating project-specific needs. Structure: Projects will be managed in a structured manner using sound project management practices. Methodology: Incremental and iterative development must be prioritized under FITARA. Collaboration: Stakeholder and partner input must be integrated through all stages. Accountability/Transparency: The EPLC framework establishes accountability through defined life cycle processes.",
+      "metadata": {
+        "document_title": "HHS EPLC Policy",
+        "source_file": "HHS EPLC Website.json",
+        "source_type": "hhs_policy",
+        "section_number": "7",
+        "section_title": "Guiding Principles",
+        "chunk_index": 1,
+        "chunk_count": 1,
+        "chunk_kind": "section_content",
+        "content_word_count": 61,
+        "schema_version": "4.0"
+      }
+    },
+    {
+      "id": "qna-8-01-4bcaa6725ffa8640",
+      "document": "HHS EPLC Policy\nSection 8: Roles and Responsibilities\n\nThis section defines the responsibilities of key stakeholders involved in implementing and managing the EPLC framework.",
+      "metadata": {
+        "document_title": "HHS EPLC Policy",
+        "source_file": "HHS EPLC Website.json",
+        "source_type": "hhs_policy",
+        "section_number": "8",
+        "section_title": "Roles and Responsibilities",
+        "chunk_index": 1,
+        "chunk_count": 1,
+        "chunk_kind": "section_content",
+        "content_word_count": 16,
+        "schema_version": "4.0"
+      }
+    },
+    {
+      "id": "qna-8-1-01-a1c68c6190b1ea77",
+      "document": "HHS EPLC Policy\nSection 8.1: IT Project Managers\n\nResponsible for ensuring compliance with the EPLC policy, involving stakeholders, utilizing incremental methodologies, maintaining project status, conducting phase activities and reviews, and reporting variances to governance bodies. Must develop corrective action or baseline change plans when necessary.",
+      "metadata": {
+        "document_title": "HHS EPLC Policy",
+        "source_file": "HHS EPLC Website.json",
+        "source_type": "hhs_policy",
+        "section_number": "8.1",
+        "section_title": "IT Project Managers",
+        "chunk_index": 1,
+        "chunk_count": 1,
+        "chunk_kind": "section_content",
+        "content_word_count": 37,
+        "schema_version": "4.0"
+      }
+    },
+    {
+      "id": "qna-8-2-01-8b4effd933ec83f8",
+      "document": "HHS EPLC Policy\nSection 8.2: Business Owners\n\nResponsible for ensuring alignment with mission priorities, providing funding, approving changes to cost and schedule, participating in reviews and acceptance testing, validating business requirements, and approving baseline tailoring strategies.",
+      "metadata": {
+        "document_title": "HHS EPLC Policy",
+        "source_file": "HHS EPLC Website.json",
+        "source_type": "hhs_policy",
+        "section_number": "8.2",
+        "section_title": "Business Owners",
+        "chunk_index": 1,
+        "chunk_count": 1,
+        "chunk_kind": "section_content",
+        "content_word_count": 29,
+        "schema_version": "4.0"
+      }
+    },
+    {
+      "id": "qna-8-3-01-1d53904dd8bc5795",
+      "document": "HHS EPLC Policy\nSection 8.3: HHS Chief Information Officer (CIO)\n\nResponsible for ensuring EPLC transparency, implementing improvements, providing guidance, ensuring effective incremental development practices, and maintaining accountability for IT management under FITARA.",
+      "metadata": {
+        "document_title": "HHS EPLC Policy",
+        "source_file": "HHS EPLC Website.json",
+        "source_type": "hhs_policy",
+        "section_number": "8.3",
+        "section_title": "HHS Chief Information Officer (CIO)",
+        "chunk_index": 1,
+        "chunk_count": 1,
+        "chunk_kind": "section_content",
+        "content_word_count": 22,
+        "schema_version": "4.0"
+      }
+    },
+    {
+      "id": "qna-8-4-01-35fae1ba68d10ae7",
+      "document": "HHS EPLC Policy\nSection 8.4: Critical Partners\n\nProvide ongoing advice, risk reviews, and recommendations at Stage Gate Reviews. Review progress, mitigation plans, and make recommendations for improvement or continuation.",
+      "metadata": {
+        "document_title": "HHS EPLC Policy",
+        "source_file": "HHS EPLC Website.json",
+        "source_type": "hhs_policy",
+        "section_number": "8.4",
+        "section_title": "Critical Partners",
+        "chunk_index": 1,
+        "chunk_count": 1,
+        "chunk_kind": "section_content",
+        "content_word_count": 22,
+        "schema_version": "4.0"
+      }
+    },
+    {
+      "id": "qna-8-5-01-69450500baedb8f8",
+      "document": "HHS EPLC Policy\nSection 8.5: HHS Project/Program Management Office\n\nEstablishes core activities and deliverables for IT projects, provides templates and tools, conducts audits of EPLC activities, and shares best practices for cost estimation, metrics, and project outcomes.",
+      "metadata": {
+        "document_title": "HHS EPLC Policy",
+        "source_file": "HHS EPLC Website.json",
+        "source_type": "hhs_policy",
+        "section_number": "8.5",
+        "section_title": "HHS Project/Program Management Office",
+        "chunk_index": 1,
+        "chunk_count": 1,
+        "chunk_kind": "section_content",
+        "content_word_count": 28,
+        "schema_version": "4.0"
+      }
+    },
+    {
+      "id": "qna-8-6-01-974f96ff69b21002",
+      "document": "HHS EPLC Policy\nSection 8.6: IT Governance Organizations/Boards\n\nEnsure IT projects are technically sound and meet business needs. Conduct Stage Gate Reviews and decide whether to advance projects or require additional work. Operate according to approved charters.",
+      "metadata": {
+        "document_title": "HHS EPLC Policy",
+        "source_file": "HHS EPLC Website.json",
+        "source_type": "hhs_policy",
+        "section_number": "8.6",
+        "section_title": "IT Governance Organizations/Boards",
+        "chunk_index": 1,
+        "chunk_count": 1,
+        "chunk_kind": "section_content",
+        "content_word_count": 29,
+        "schema_version": "4.0"
+      }
+    },
+    {
+      "id": "qna-8-7-01-89c6ce80db378301",
+      "document": "HHS EPLC Policy\nSection 8.7: OPDIV CIOs\n\nResponsible for establishing governance processes that align with EPLC, ensuring critical partner participation, monitoring EPLC implementation, and working with leadership to maintain alignment with FITARA mandates.",
+      "metadata": {
+        "document_title": "HHS EPLC Policy",
+        "source_file": "HHS EPLC Website.json",
+        "source_type": "hhs_policy",
+        "section_number": "8.7",
+        "section_title": "OPDIV CIOs",
+        "chunk_index": 1,
+        "chunk_count": 1,
+        "chunk_kind": "section_content",
+        "content_word_count": 26,
+        "schema_version": "4.0"
+      }
+    },
+    {
+      "id": "qna-8-8-01-a95841c11f05a210",
+      "document": "HHS EPLC Policy\nSection 8.8: HHS EPLC Change Control Board (CCB)\n\nGoverns integrity of the EPLC Framework, receives and reviews change requests, accepts or rejects changes, requests additional information as needed, and provides feedback on policy changes.",
+      "metadata": {
+        "document_title": "HHS EPLC Policy",
+        "source_file": "HHS EPLC Website.json",
+        "source_type": "hhs_policy",
+        "section_number": "8.8",
+        "section_title": "HHS EPLC Change Control Board (CCB)",
+        "chunk_index": 1,
+        "chunk_count": 1,
+        "chunk_kind": "section_content",
+        "content_word_count": 26,
+        "schema_version": "4.0"
+      }
+    },
+    {
+      "id": "qna-9-01-0210c8db7d8f0d91",
+      "document": "HHS EPLC Policy\nSection 9: Supporting Documentation\n\nLists official HHS and federal guidance supporting this policy, including: EPLC Framework Overview, HHS Acquisition Regulation (HHSAR, 2015), Federal Acquisition Certification for Program/Project Managers (2013), Capital Planning and Investment Control (2016), IT Alternatives Analysis (2003), Earned Value Management (OMB M-05-23, 2005), IT Performance Management (2021), Enterprise Architecture (2008), System Inventory Management (2020), FITARA (OMB M-15-14, 2015), Cost Estimating and Assessment Guide (GAO, 2009), OMB Circulars A-11, A-127, and A-130, Records Management Policies (2020), Section 508 Accessibility Policy (2020), Security and Privacy Policies, and HHS Policy for Privacy Impact Assessments (2019).",
+      "metadata": {
+        "document_title": "HHS EPLC Policy",
+        "source_file": "HHS EPLC Website.json",
+        "source_type": "hhs_policy",
+        "section_number": "9",
+        "section_title": "Supporting Documentation",
+        "chunk_index": 1,
+        "chunk_count": 1,
+        "chunk_kind": "section_content",
+        "content_word_count": 90,
+        "schema_version": "4.0"
+      }
+    },
+    {
+      "id": "qna-10-01-3f51d11f70e26b02",
+      "document": "HHS EPLC Policy\nSection 10: Information and Assistance\n\nThe HHS OCIO Office of Enterprise Services (OES) manages this policy. Questions or requests for information should be directed to the EPLC resource mailbox: EPLC@HHS.gov.",
+      "metadata": {
+        "document_title": "HHS EPLC Policy",
+        "source_file": "HHS EPLC Website.json",
+        "source_type": "hhs_policy",
+        "section_number": "10",
+        "section_title": "Information and Assistance",
+        "chunk_index": 1,
+        "chunk_count": 1,
+        "chunk_kind": "section_content",
+        "content_word_count": 25,
+        "schema_version": "4.0"
+      }
+    },
+    {
+      "id": "qna-11-01-9fb3a822af55c75d",
+      "document": "HHS EPLC Policy\nSection 11: Effective Date\n\nThe effective date of this policy is the date it is approved. OPDIVs must prepare implementation documentation within 120 days and provide a copy to the HHS CIO.",
+      "metadata": {
+        "document_title": "HHS EPLC Policy",
+        "source_file": "HHS EPLC Website.json",
+        "source_type": "hhs_policy",
+        "section_number": "11",
+        "section_title": "Effective Date",
+        "chunk_index": 1,
+        "chunk_count": 1,
+        "chunk_kind": "section_content",
+        "content_word_count": 28,
+        "schema_version": "4.0"
+      }
+    },
+    {
+      "id": "qna-12-01-4d5056c4f19be74f",
+      "document": "HHS EPLC Policy\nSection 12: Implementation\n\nImplementation requires notification to labor unions and compliance with the Indian Self-Determination and Education Assistance Act and related policies. HHS must consult with tribal governments before taking actions affecting them and remove procedural impediments to such collaboration.",
+      "metadata": {
+        "document_title": "HHS EPLC Policy",
+        "source_file": "HHS EPLC Website.json",
+        "source_type": "hhs_policy",
+        "section_number": "12",
+        "section_title": "Implementation",
+        "chunk_index": 1,
+        "chunk_count": 1,
+        "chunk_kind": "section_content",
+        "content_word_count": 37,
+        "schema_version": "4.0"
+      }
+    },
+    {
+      "id": "qna-12-1-01-2a032cbd461608e2",
+      "document": "HHS EPLC Policy\nSection 12.1: Key Effectiveness Indicators\n\nThe effectiveness of this policy will be measured by: (1) percentage of IT projects using EPLC, and (2) percentage of IT projects using iterative/incremental development methodologies.",
+      "metadata": {
+        "document_title": "HHS EPLC Policy",
+        "source_file": "HHS EPLC Website.json",
+        "source_type": "hhs_policy",
+        "section_number": "12.1",
+        "section_title": "Key Effectiveness Indicators",
+        "chunk_index": 1,
+        "chunk_count": 1,
+        "chunk_kind": "section_content",
+        "content_word_count": 26,
+        "schema_version": "4.0"
+      }
+    },
+    {
+      "id": "qna-13-01-c44679dee709e2c0",
+      "document": "HHS EPLC Policy\nSection 13: Glossary\n\nRefer to Appendix B of the EPLC Framework for definitions and terminology.",
+      "metadata": {
+        "document_title": "HHS EPLC Policy",
+        "source_file": "HHS EPLC Website.json",
+        "source_type": "hhs_policy",
+        "section_number": "13",
+        "section_title": "Glossary",
+        "chunk_index": 1,
+        "chunk_count": 1,
+        "chunk_kind": "section_content",
+        "content_word_count": 12,
+        "schema_version": "4.0"
+      }
+    },
+    {
+      "id": "qna-14-01-1f1e04a6946ba1d1",
+      "document": "HHS EPLC Policy\nSection 14: Approvals\n\nAcknowledges review and approval by the appropriate HHS officials. Future revisions must be coordinated and approved by the undersigned or their designated representatives.",
+      "metadata": {
+        "document_title": "HHS EPLC Policy",
+        "source_file": "HHS EPLC Website.json",
+        "source_type": "hhs_policy",
+        "section_number": "14",
+        "section_title": "Approvals",
+        "chunk_index": 1,
+        "chunk_count": 1,
+        "chunk_kind": "section_content",
+        "content_word_count": 23,
+        "schema_version": "4.0"
+      }
+    }
+  ]
+}
