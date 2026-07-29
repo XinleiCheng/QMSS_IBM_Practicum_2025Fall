@@ -16,7 +16,7 @@ class RetrievedChunk:
 
     @property
     def source(self) -> str:
-        for key in ("source", "title", "document"):
+        for key in ("document_title", "source", "title", "document"):
             value = self.metadata.get(key)
             if value:
                 return str(value)
@@ -26,6 +26,10 @@ class RetrievedChunk:
     def section(self) -> str | None:
         value = self.metadata.get("section_number") or self.metadata.get("section")
         return str(value) if value else None
+
+    @property
+    def similarity(self) -> float:
+        return 1.0 - self.distance
 
 
 @dataclass(frozen=True)
@@ -49,4 +53,3 @@ class DraftResult:
     missing_information: str
     citations: tuple[Citation, ...] = ()
     warning: str | None = None
-

@@ -1,0 +1,39 @@
+services:
+  api:
+    build: .
+    env_file:
+      - .env
+    environment:
+      STATE_DATABASE: /app/var/eplc_assistant.sqlite3
+    ports:
+      - "8000:8000"
+    volumes:
+      - eplc-state:/app/var
+    healthcheck:
+      test:
+        - CMD
+        - python
+        - -c
+        - "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"
+      interval: 10s
+      timeout: 5s
+      retries: 6
+
+  frontend:
+    build: .
+    command:
+      - streamlit
+      - run
+      - ibm.py
+      - --server.address=0.0.0.0
+      - --server.port=8501
+    environment:
+      EPLC_API_URL: http://api:8000
+    ports:
+      - "8501:8501"
+    depends_on:
+      api:
+        condition: service_healthy
+
+volumes:
+  eplc-state:

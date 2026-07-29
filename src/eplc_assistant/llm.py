@@ -18,13 +18,24 @@ class TextGenerator(Protocol):
 class OpenAITextGenerator:
     """OpenAI implementation kept behind a narrow application interface."""
 
-    def __init__(self, *, api_key: str, model: str) -> None:
+    def __init__(
+        self,
+        *,
+        api_key: str,
+        model: str,
+        timeout_seconds: float = 60.0,
+        max_retries: int = 2,
+    ) -> None:
         if not api_key:
             raise ValueError("An OpenAI API key is required.")
 
         from openai import OpenAI
 
-        self._client = OpenAI(api_key=api_key)
+        self._client = OpenAI(
+            api_key=api_key,
+            timeout=timeout_seconds,
+            max_retries=max_retries,
+        )
         self._model = model
 
     def generate(
@@ -43,4 +54,3 @@ class OpenAITextGenerator:
             temperature=temperature,
         )
         return (response.choices[0].message.content or "").strip()
-

@@ -27,6 +27,7 @@ dist/
 # Local runtime output
 *.log
 result.csv
+var/
 
 # Generated vector-store files
 vector_db/

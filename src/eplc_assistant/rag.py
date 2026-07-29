@@ -2,11 +2,14 @@
 
 from __future__ import annotations
 
+import os
 from collections.abc import Sequence
 from typing import Any, Protocol
 
 from eplc_assistant.config import IndexSpec
 from eplc_assistant.models import RetrievedChunk
+
+os.environ.setdefault("ANONYMIZED_TELEMETRY", "False")
 
 
 class EmbeddingProvider(Protocol):
@@ -14,20 +17,35 @@ class EmbeddingProvider(Protocol):
 
 
 class SearchableIndex(Protocol):
-    def search(self, embedding: Sequence[float], limit: int) -> list[RetrievedChunk]: ...
+    def search(
+        self,
+        embedding: Sequence[float],
+        limit: int,
+        metadata_filter: dict[str, Any] | None = None,
+    ) -> list[RetrievedChunk]: ...
 
 
 class BgeEmbeddingProvider:
     """Query encoder matching the BGE model used to build the checked-in indexes."""
 
-    def __init__(self, model_name: str = "BAAI/bge-large-en-v1.5") -> None:
+    def __init__(
+        self,
+        model_name: str = "BAAI/bge-base-en-v1.5",
+        query_instruction: str = "Represent this sentence for searching relevant passages:",
+    ) -> None:
         from sentence_transformers import SentenceTransformer
 
         self._model = SentenceTransformer(model_name, device="cpu")
+        self._query_instruction = query_instruction.strip()
 
     def embed_query(self, text: str) -> list[float]:
+        instructed_text = (
+            f"{self._query_instruction} {text}"
+            if self._query_instruction
+            else text
+        )
         vectors = self._model.encode(
-            [f"query: {text}"],
+            [instructed_text],
             normalize_embeddings=True,
         )
         return vectors[0].tolist()
@@ -60,11 +78,17 @@ class ChromaIndex:
         self,
         embedding: Sequence[float],
         limit: int,
+        metadata_filter: dict[str, Any] | None = None,
     ) -> list[RetrievedChunk]:
+        query: dict[str, Any] = {
+            "query_embeddings": [list(embedding)],
+            "n_results": limit,
+            "include": ["documents", "metadatas", "distances"],
+        }
+        if metadata_filter:
+            query["where"] = metadata_filter
         result = self._collection.query(
-            query_embeddings=[list(embedding)],
-            n_results=limit,
-            include=["documents", "metadatas", "distances"],
+            **query,
         )
 
         ids = _first_result(result.get("ids"))
@@ -98,13 +122,18 @@ class MultiIndexRetriever:
         *,
         embedder: EmbeddingProvider,
         indexes: Sequence[SearchableIndex],
-        distance_threshold: float,
+        max_distance: float,
     ) -> None:
         self._embedder = embedder
         self._indexes = tuple(indexes)
-        self._distance_threshold = distance_threshold
+        self._max_distance = max_distance
 
-    def retrieve(self, query: str, limit: int) -> list[RetrievedChunk]:
+    def retrieve(
+        self,
+        query: str,
+        limit: int,
+        metadata_filter: dict[str, Any] | None = None,
+    ) -> list[RetrievedChunk]:
         if not query.strip():
             return []
 
@@ -112,8 +141,8 @@ class MultiIndexRetriever:
         candidates = [
             chunk
             for index in self._indexes
-            for chunk in index.search(embedding, limit)
-            if chunk.distance <= self._distance_threshold
+            for chunk in index.search(embedding, limit, metadata_filter)
+            if chunk.distance <= self._max_distance
         ]
         candidates.sort(key=lambda chunk: chunk.distance)
 
@@ -134,4 +163,3 @@ def _first_result(value: Any) -> list[Any]:
     if not value:
         return []
     return list(value[0])
-

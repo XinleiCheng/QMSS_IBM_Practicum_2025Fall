@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import re
 from typing import Protocol
 
 from eplc_assistant.llm import TextGenerator
@@ -17,9 +18,16 @@ If the excerpts do not contain the answer, reply exactly:
 Not specified in the provided EPLC sources.
 Do not fill gaps with general knowledge."""
 
+CITATION_PATTERN = re.compile(r"\[S(\d+)\]")
+
 
 class Retriever(Protocol):
-    def retrieve(self, query: str, limit: int) -> list[RetrievedChunk]: ...
+    def retrieve(
+        self,
+        query: str,
+        limit: int,
+        metadata_filter: dict | None = None,
+    ) -> list[RetrievedChunk]: ...
 
 
 class QnaService:
@@ -53,13 +61,31 @@ class QnaService:
             temperature=0.0,
         )
 
-        citations = _citations(chunks) if answer != REFUSAL else ()
-        warning = (
-            "Retrieved passages were insufficient to answer this question."
-            if answer == REFUSAL
-            else None
+        if answer == REFUSAL:
+            return AnswerResult(
+                answer=answer,
+                warning="Retrieved passages were insufficient to answer this question.",
+            )
+
+        referenced_numbers = {
+            int(number) for number in CITATION_PATTERN.findall(answer)
+        }
+        valid_numbers = set(range(1, len(chunks) + 1))
+        if not referenced_numbers or not referenced_numbers <= valid_numbers:
+            return AnswerResult(
+                answer=REFUSAL,
+                warning=(
+                    "The generated answer did not contain valid source citations, "
+                    "so it was not returned."
+                ),
+            )
+
+        citations = tuple(
+            citation
+            for number, citation in enumerate(_citations(chunks), start=1)
+            if number in referenced_numbers
         )
-        return AnswerResult(answer=answer, citations=citations, warning=warning)
+        return AnswerResult(answer=answer, citations=citations)
 
 
 def _format_context(chunks: list[RetrievedChunk]) -> str:
@@ -87,4 +113,3 @@ def _citations(chunks: list[RetrievedChunk]) -> tuple[Citation, ...]:
 def _excerpt(text: str, limit: int = 320) -> str:
     compact = " ".join(text.split())
     return compact if len(compact) <= limit else f"{compact[: limit - 1]}…"
-

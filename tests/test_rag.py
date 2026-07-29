@@ -13,7 +13,12 @@ class FakeIndex:
     def __init__(self, chunks: list[RetrievedChunk]) -> None:
         self.chunks = chunks
 
-    def search(self, embedding: list[float], limit: int) -> list[RetrievedChunk]:
+    def search(
+        self,
+        embedding: list[float],
+        limit: int,
+        metadata_filter: dict | None = None,
+    ) -> list[RetrievedChunk]:
         return self.chunks[:limit]
 
 
@@ -34,7 +39,7 @@ class MultiIndexRetrieverTests(TestCase):
                 FakeIndex([chunk("b", 0.4), chunk("a", 0.2)]),
                 FakeIndex([chunk("a", 0.2), chunk("too-far", 0.9)]),
             ],
-            distance_threshold=0.75,
+            max_distance=0.75,
         )
 
         results = retriever.retrieve("question", limit=5)
@@ -45,8 +50,7 @@ class MultiIndexRetrieverTests(TestCase):
         retriever = MultiIndexRetriever(
             embedder=FakeEmbedder(),
             indexes=[FakeIndex([chunk("a", 0.1)])],
-            distance_threshold=0.75,
+            max_distance=0.75,
         )
 
         self.assertEqual([], retriever.retrieve("  ", limit=5))
-

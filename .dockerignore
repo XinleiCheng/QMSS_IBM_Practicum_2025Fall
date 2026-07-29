@@ -1,0 +1,16 @@
+.git
+.github
+.env
+.venv
+__pycache__
+*.pyc
+.pytest_cache
+.coverage
+htmlcov
+Weekly Report
+evaluation/results
+Data/Q&A Processed/chunks_v2.json
+Data/Q&A Processed/chunks_v3.json
+Data/Vector DataBase/qna_v2_*
+Data/Vector DataBase/qna_v3_*
+var

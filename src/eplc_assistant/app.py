@@ -2,40 +2,14 @@
 
 from __future__ import annotations
 
+import os
 from typing import Any
 
 import streamlit as st
 
-from eplc_assistant.config import Settings
+from eplc_assistant.client import AssistantApiClient, ApiClientError
 from eplc_assistant.models import Citation
-from eplc_assistant.runtime import ApplicationServices, build_services
-
-
-PHASE_TEMPLATES = {
-    "Requirement": ["Physical Data Model"],
-    "Design": [
-        "Capacity Planning",
-        "Contingency Planning",
-        "Data Conversion Plan",
-        "Implementation Plan",
-        "Interface Control",
-        "Product Design",
-        "Test Plan",
-    ],
-    "Development": [
-        "Operation and Maintenance Manual",
-        "Test Case",
-        "Training Plan",
-    ],
-    "Implementation": [
-        "Acquisition Strategy",
-        "Business Impact Analysis",
-        "Lessons Learned Log",
-        "Lessons Learned Post-Project Survey",
-        "Service Level Agreement / MOU",
-        "System of Records Notice",
-    ],
-}
+from eplc_assistant.templates import PHASE_TEMPLATES
 
 
 def main() -> None:
@@ -141,7 +115,7 @@ def _render_qna_page() -> None:
     with st.chat_message("assistant"):
         try:
             with st.spinner("Retrieving EPLC sources and preparing an answer…"):
-                result = _services().qna.answer(question)
+                result = _api_client().answer(question)
         except Exception as exc:
             message = _friendly_error(exc)
             st.error(message)
@@ -207,7 +181,7 @@ def _render_drafting_page() -> None:
 
     try:
         with st.spinner("Retrieving template guidance and drafting the section…"):
-            result = _services().drafting.draft(
+            result = _api_client().draft(
                 phase=phase,
                 template=template,
                 section=section,
@@ -237,8 +211,10 @@ def _render_drafting_page() -> None:
 
 
 @st.cache_resource(show_spinner=False)
-def _services() -> ApplicationServices:
-    return build_services(Settings.from_env())
+def _api_client() -> AssistantApiClient:
+    return AssistantApiClient(
+        base_url=os.getenv("EPLC_API_URL", "http://localhost:8000"),
+    )
 
 
 def _render_citations(citations: Any) -> None:
@@ -257,7 +233,7 @@ def _render_citations(citations: Any) -> None:
 
 
 def _friendly_error(exc: Exception) -> str:
-    if isinstance(exc, (FileNotFoundError, RuntimeError, ValueError)):
+    if isinstance(exc, (ApiClientError, FileNotFoundError, RuntimeError, ValueError)):
         return str(exc)
     return (
         "The assistant could not complete the request. Check the local setup and "
@@ -272,4 +248,3 @@ def _safe_filename(value: str) -> str:
 
 if __name__ == "__main__":
     main()
-

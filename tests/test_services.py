@@ -9,9 +9,16 @@ class FakeRetriever:
     def __init__(self, chunks: list[RetrievedChunk]) -> None:
         self.chunks = chunks
         self.queries: list[str] = []
+        self.metadata_filters: list[dict | None] = []
 
-    def retrieve(self, query: str, limit: int) -> list[RetrievedChunk]:
+    def retrieve(
+        self,
+        query: str,
+        limit: int,
+        metadata_filter: dict | None = None,
+    ) -> list[RetrievedChunk]:
         self.queries.append(query)
+        self.metadata_filters.append(metadata_filter)
         return self.chunks[:limit]
 
 
@@ -75,12 +82,27 @@ class QnaServiceTests(TestCase):
         self.assertIn("[S1]", result.answer)
         self.assertIn("Source: EPLC Framework", generator.calls[0]["user_prompt"])
 
+    def test_answer_without_valid_citation_is_refused(self) -> None:
+        service = QnaService(
+            retriever=FakeRetriever([source_chunk()]),
+            generator=FakeGenerator(["An uncited claim."]),
+        )
+
+        result = service.answer("What does the PM document?")
+
+        self.assertEqual(REFUSAL, result.answer)
+        self.assertEqual((), result.citations)
+        self.assertIn("valid source citations", result.warning)
+
 
 class DraftingServiceTests(TestCase):
     def test_missing_context_does_not_generate_an_ungrounded_draft(self) -> None:
         generator = FakeGenerator(["should not be used"])
         service = DraftingService(
             phase_retrievers={"design": FakeRetriever([])},
+            template_sources={
+                "Design": {"Test Plan": ("Test Plan Template",)}
+            },
             generator=generator,
         )
 
@@ -99,8 +121,12 @@ class DraftingServiceTests(TestCase):
         generator = FakeGenerator(
             ["Draft text based on the project facts.", "- Testing owner"]
         )
+        retriever = FakeRetriever([source_chunk()])
         service = DraftingService(
-            phase_retrievers={"design": FakeRetriever([source_chunk()])},
+            phase_retrievers={"design": retriever},
+            template_sources={
+                "Design": {"Test Plan": ("Test Plan Template",)}
+            },
             generator=generator,
         )
 
@@ -120,4 +146,27 @@ class DraftingServiceTests(TestCase):
                 for call in generator.calls
             )
         )
+        self.assertEqual(
+            ["Test Plan Template"],
+            retriever.metadata_filters[0]["$or"][0]["source"]["$in"],
+        )
 
+    def test_unsupported_template_is_rejected_before_retrieval(self) -> None:
+        retriever = FakeRetriever([source_chunk()])
+        service = DraftingService(
+            phase_retrievers={"design": retriever},
+            template_sources={
+                "Design": {"Implementation Plan": ("Implementation Plan",)}
+            },
+            generator=FakeGenerator([]),
+        )
+
+        with self.assertRaisesRegex(ValueError, "not supported"):
+            service.draft(
+                phase="Design",
+                template="Test Plan",
+                section="Scope",
+                project_details="A claims-processing system",
+            )
+
+        self.assertEqual([], retriever.queries)
